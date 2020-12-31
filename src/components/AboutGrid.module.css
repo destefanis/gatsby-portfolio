@@ -1,0 +1,32 @@
+/* This is a nested grid with two columns */
+.aboutGrid {
+  padding: 0 0 240px;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.video {
+  border-radius: 12px;
+}
+
+.first {
+  margin-top: 30px;
+}
+
+.third {
+  margin-top: 60px;
+}
+
+.fourth {
+  margin-top: 90px;
+}
+
+.smallVideo {
+  border-radius: 12px;
+  margin-bottom: 20px;
+}

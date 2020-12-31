@@ -1,0 +1,105 @@
+
+.cardPerspectiveWrapper {
+  transform-style: preserve-3d;
+  transform: perspective(921px);
+}
+
+.contentWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  backface-visibility: hidden;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  backface-visibility: hidden;
+  background: var(--color-pink);
+  height: 962px;  
+  border-radius: 32px;
+  transition: all 300ms ease-out;
+  /* cursor: none; */
+}
+
+/* Featured cards take up an entire row */
+.featured {
+  grid-column: span 2;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.pink {
+  background: var(--color-pink);
+}
+
+.pink:hover {
+  background: hsla(0, 100%, 82%, 1);
+}
+
+.blue {
+  background: var(--color-blue);
+}
+
+.blue:hover {
+ background: hsla(203, 75%, 43%, 1);
+}
+
+.green {
+  background: var(--color-green);
+}
+
+.green:hover {
+  background: hsla(162, 70%, 50%, 1);
+ }
+
+.purple {
+  background: var(--color-purple);
+}
+
+.purple:hover {
+  background: hsla(271, 73%, 64%, 1);
+}
+
+.yellow {
+  background: var(--color-yellow);
+}
+
+.yellow:hover {
+  background: hsla(48, 100%, 64%, 1);
+}
+
+.teal {
+  background: var(--color-teal);
+}
+
+.teal:hover {
+  background: hsla(180, 47%, 28%, 1);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  transform: translateZ(0);
+}
+
+.title {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px;
+  border-radius: 32px;
+  background: var(--color-white);
+  color: var(--color-black);
+}

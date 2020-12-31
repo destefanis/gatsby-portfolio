@@ -1,0 +1,64 @@
+.footer {
+  padding: 180px 0 0;
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.card {
+  background: var(--color-grey);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column;
+  height: 600px;
+  border-radius: 32px;
+}
+
+.title {
+  margin: 0 auto;
+  font-size: 36px;
+  line-height: 160%;
+  font-weight: 500;
+}
+
+.contact {
+  color: var(--color-blue);
+}
+
+.icon {
+  position: relative;
+  top: -6px;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+}
+
+.footerLinks {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-flow: row;
+  font-weight: 500;
+}
+
+.openSource {
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.socialLinks {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.socialLink {
+  padding-left: 60px;
+  font-size: 18px;
+  transition: color 150ms ease;
+}
+
+.socialLink:hover {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+

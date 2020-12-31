@@ -1,0 +1,56 @@
+.hero {
+  position: relative;
+  padding-top: 220px;
+  padding-bottom: 280px;
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.titleWrapper {
+  overflow: hidden;
+}
+
+.title {
+  max-width: 80%;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 160%;
+  color: var(--color-black);
+}
+
+.details {
+  display: flex;
+  flex-flow: row;
+  padding-top: 60px;
+}
+
+.detail {
+  /* TODO Fix this magic number */
+  padding-right: 106px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.iconWrapper {
+  padding: 8px;
+  border-radius: 100px;
+  background: var(--color-pink);
+  margin-right: 16px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  margin: auto;
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--color-black);
+}
+

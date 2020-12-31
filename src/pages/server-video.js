@@ -2,6 +2,7 @@ import * as React from "react"
 import { useState } from "react"
 import useMouse from "@react-hook/mouse-position"
 import { motion } from "framer-motion"
+import { Link } from "gatsby"
 
 import Navigation from "../components/Navigation.js"
 import Hero from "../components/Hero.js"
@@ -9,11 +10,12 @@ import WorkGrid from "../components/WorkGrid.js"
 import AboutSection from "../components/AboutSection.js"
 import Footer from "../components/Footer.js"
 
+
 import "../components/reset.css"
 import "../components/global.css"
 
 // markup
-const IndexPage = () => {
+const ServerVideo = () => {
 
   const [cursorText, setCursorText] = useState("");
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -155,13 +157,18 @@ const IndexPage = () => {
           <span className="cursor-text">{cursorText}</span>
         </motion.div>
         <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
-        <Hero text="I’m a designer who’s passionate about solving problems and creating delightful user experiences." details={true}/>
-        <WorkGrid onProjectEnter={projectEnter} onProjectLeave={cursorLeave} />
-        <AboutSection />
+        <section className="container">
+          <h1 className="h1">Server Video</h1>
+          <p className="paragraph">
+          Building a way for millions of Discord users to connect over voice, video, and streaming. 
+          The team on this project was Christina Zou (PM), Joey Baker (EM), Kyle, Jon, Kyle, and Andy (Engineers) 
+          and myself (design).
+          </p>
+        </section>
         <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
       </div>
     </main>
   )
 }
 
-export default IndexPage
+export default ServerVideo
