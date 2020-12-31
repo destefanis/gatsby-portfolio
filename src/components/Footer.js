@@ -34,19 +34,19 @@ function Footer(props) {
         </div>
         <nav className={styles.footerLinks}>
           <div className={styles.openSource}>
-            View this portfolio on <a href="#">Figma</a> or <a href="#">Github</a>.
+            View this portfolio on <a href="https://www.figma.com/@daniel">Figma</a> or <a href="https://github.com/destefanis/gatsby-portfolio">Github</a>.
           </div>
           <div className={styles.socialLinks}>
-            <a href="#" target="_blank" onMouseEnter={linkEnter} onMouseLeave={linkLeave} className={styles.socialLink}>
+            <a href="https://twitter.com/daniel__designs" target="_blank" onMouseEnter={linkEnter} onMouseLeave={linkLeave} className={styles.socialLink}>
               Twitter
             </a>
-            <a href="#" target="_blank" onMouseEnter={linkEnter} onMouseLeave={linkLeave} className={styles.socialLink}>
+            <a href="https://github.com/destefanis" target="_blank" onMouseEnter={linkEnter} onMouseLeave={linkLeave} className={styles.socialLink}>
               Github
             </a>
-            <a href="#" target="_blank" onMouseEnter={linkEnter} onMouseLeave={linkLeave} className={styles.socialLink}>
+            <a href="https://www.linkedin.com/in/danielrd/" target="_blank" onMouseEnter={linkEnter} onMouseLeave={linkLeave} className={styles.socialLink}>
               LinkedIn
             </a>
-            <a href="#" target="_blank" onMouseEnter={linkEnter} onMouseLeave={linkLeave} className={styles.socialLink}>
+            <a href="https://dribbble.com/danielrd/shots" target="_blank" onMouseEnter={linkEnter} onMouseLeave={linkLeave} className={styles.socialLink}>
               Dribbble
             </a>
           </div>
