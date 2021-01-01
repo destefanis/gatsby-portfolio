@@ -4,6 +4,7 @@
   padding-bottom: 280px;
   grid-column-start: 1;
   grid-column-end: 13;
+  min-height: 700px;
 }
 
 .titleWrapper {
