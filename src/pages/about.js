@@ -2,6 +2,7 @@ import * as React from "react"
 import { useState } from "react"
 import { motion } from "framer-motion"
 
+import ClientOnly from "../components/ClientOnly.js"
 import Cursor from "../components/Cursor.js"
 import Navigation from "../components/Navigation.js"
 import Hero from "../components/Hero.js"
@@ -40,9 +41,12 @@ const AboutPage = () => {
   return (
     <main>
       <div>
-        <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
         <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
         <Hero text="I’m a husband, dad to three pets, and a designer who’s trying not to take himself too seriously." details={false} />
+  
+        <ClientOnly>
+          <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
+        </ClientOnly>
 
         <motion.section className="grid">
           <div className={styles.aboutGrid}>
