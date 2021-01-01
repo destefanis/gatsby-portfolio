@@ -1,0 +1,22 @@
+/* https://github.com/sharanda/manrope */
+
+/* @font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-light.woff2") format("woff2");
+  weight: 400;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-medium.woff2") format("woff2");
+  weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope Semibold";
+  src: url("../fonts/manrope-semibold.woff2") format("woff2");
+  weight: bold;
+  font-style: normal;
+}
