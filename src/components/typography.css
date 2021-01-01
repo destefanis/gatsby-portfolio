@@ -15,8 +15,8 @@
 }
 
 @font-face {
-  font-family: "Manrope Semibold";
+  font-family: "Manrope";
   src: url("../fonts/manrope-semibold.woff2") format("woff2");
-  weight: bold;
+  weight: 600;
   font-style: normal;
 }
