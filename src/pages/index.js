@@ -44,13 +44,13 @@ const IndexPage = () => {
     <main>
       <div>
         <ClientOnly>
-        <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
+          <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
         </ClientOnly>
         <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
-        <ClientOnly>
         <Hero text="I’m a designer who’s passionate about solving problems and creating delightful user experiences." details={true}/>
-        <WorkGrid onProjectEnter={projectEnter} onProjectLeave={cursorLeave} />
-        <AboutSection />
+        <ClientOnly>
+          <WorkGrid onProjectEnter={projectEnter} onProjectLeave={cursorLeave} />
+          <AboutSection />
         </ClientOnly>
         <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
       </div>

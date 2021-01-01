@@ -5,22 +5,28 @@ import styles from './hero.module.css'
 import designIcon from '../images/design-icon.svg'
 import mapIcon from '../images/map-icon.svg'
 
+import ClientOnly from "../components/ClientOnly.js"
+
 function Hero(props) {
   return (
     <div className="grid">
       <div className={styles.hero}>
         <div className={styles.titleWrapper}>
-          <motion.h1 
-            className={styles.title}
-            initial={{ y: 200 }}
-            animate={{ y: 0 }}
-            transition={{ type: 'spring', delay: 0.2, mass: 1, damping: 10, stiffness: 80 }}
-          >
-            {props.text}
-          </motion.h1>
+          <ClientOnly>
+            <motion.h1 
+              className={styles.title}
+              initial={{ y: 200 }}
+              animate={{ y: 0 }}
+              transition={{ type: 'spring', delay: 0.2, mass: 1, damping: 10, stiffness: 80 }}
+            >
+              {props.text}
+            </motion.h1>
+          </ClientOnly>
         </div>
 
+        
         {props.details === true &&
+          <ClientOnly>
           <div className={styles.details}>
             <div className={styles.detail}>
               <motion.div
@@ -54,6 +60,7 @@ function Hero(props) {
               </motion.h3>
             </div>
           </div>
+          </ClientOnly>
         }
 
       </div>
