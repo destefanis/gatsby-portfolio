@@ -1,6 +1,5 @@
 import * as React from "react"
 import { useState } from "react"
-import useMouse from "@react-hook/mouse-position"
 import { motion } from "framer-motion"
 
 import Cursor from "../components/Cursor.js"

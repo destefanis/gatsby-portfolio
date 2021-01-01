@@ -16,7 +16,6 @@
   "license": "0BSD",
   "dependencies": {
     "@popmotion/popcorn": "^0.4.4",
-    "@react-hook/mouse-position": "^4.1.0",
     "framer-motion": "^3.1.1",
     "gatsby": "^2.26.1",
     "gatsby-plugin-react-helmet": "^3.7.0",
