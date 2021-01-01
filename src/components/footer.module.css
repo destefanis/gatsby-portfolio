@@ -1,7 +1,13 @@
 .footer {
-  padding: 180px 0 0;
+  padding: 0 0 0;
   grid-column-start: 1;
   grid-column-end: 13;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 180px 0 0;
+  }
 }
 
 .card {
@@ -10,13 +16,13 @@
   justify-content: center;
   align-content: center;
   flex-flow: column;
-  height: 600px;
+  height: 240px;
   border-radius: 32px;
 }
 
 .title {
   margin: 0 auto;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 160%;
   font-weight: 500;
 }
@@ -37,23 +43,25 @@
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
-  flex-flow: row;
+  flex-flow: column-reverse;
   font-weight: 500;
 }
 
 .openSource {
-  align-self: flex-start;
-  margin-right: auto;
+  align-self: center;
+  margin: 30px auto 0;
+  font-size: 14px;
 }
 
 .socialLinks {
-  align-self: flex-end;
-  margin-left: auto;
+  align-self: center;
+  margin: 0 auto;
+  padding-right: 30px;
 }
 
 .socialLink {
-  padding-left: 60px;
-  font-size: 18px;
+  padding-left: 30px;
+  font-size: 14px;
   transition: color 150ms ease;
 }
 
@@ -62,3 +70,31 @@
   text-decoration: none;
 }
 
+
+@media screen and (min-width: 960px) {
+  .footerLinks {
+    flex-flow: row;
+  }
+
+  .card {
+    height: 600px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .socialLink {
+    align-self: flex-end;
+    padding-right: 0;
+    padding-left: 60px;
+    font-size: 18px;
+    margin: 0 0 0 auto;
+  }
+
+  .openSource {
+    align-self: flex-start;
+    margin: 0 auto 0 0;
+    font-size: 18px;
+  }
+}

@@ -5,7 +5,7 @@
   padding: 20px 0 0;
   grid-column-start: 1;
   grid-column-end: 13;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -32,6 +32,7 @@
 @media screen and (min-width: 960px) {
   .nav {
     padding: 40px 0 0;
+    font-size: 18px;
   }
 
   .navLink {

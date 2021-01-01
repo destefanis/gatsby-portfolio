@@ -12,7 +12,7 @@ function Cursor(props) {
 
   let mouseXPosition = position.x;
   let mouseYPosition = position.y;
-  
+
   const variants = {
     default: {
       opacity: 1,
@@ -80,18 +80,18 @@ function Cursor(props) {
       height: 10,
       width: 10,
       fontSize: "16px",
-      backgroundColor: "#1e91d6",
+      backgroundColor: "rgba(30, 145, 214, 0)",
       x: "50%",
       y: "50%",
       transition: {
         type: "spring",
         mass: 0,
         stiffness: 0,
-        duration: 0.1,
+        duration: 2,
       }
     },
   };
-  
+
   const spring = {
     type: "spring",
     stiffness: 500,
@@ -101,13 +101,14 @@ function Cursor(props) {
 
   return (
     <motion.div
-          variants={variants}
-          className="circle"
-          animate={props.cursorVariant}
-          transition={spring}
-        >
-          <span className="cursor-text">{props.cursorText}</span>
-        </motion.div>
+      variants={variants}
+      className="circle"
+      animate={props.cursorVariant}
+      transition={spring}
+      initial="initial"
+    >
+      <span className="cursor-text">{props.cursorText}</span>
+    </motion.div>
   )
 }
 

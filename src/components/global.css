@@ -35,7 +35,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  max-width: calc(100% - 60px);
+  max-width: calc(100% - 40px);
   margin: auto;
 }
 
@@ -53,7 +53,7 @@ body {
 }
 
 .grid--full {
-  max-width: calc(100% - 60px);
+  max-width: calc(100% - 40px);
 }
 
 @media screen and (min-width: 960px) {

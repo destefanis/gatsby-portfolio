@@ -1,7 +1,7 @@
 .hero {
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 100px;
   grid-column-start: 1;
   grid-column-end: 13;
 }
@@ -41,7 +41,7 @@
 }
 
 .title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 160%;
   color: var(--color-black);
