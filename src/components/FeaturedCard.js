@@ -65,7 +65,7 @@ function FeaturedCard(props) {
   }, [hover, xy, centerPoint]);
 
   return (
-    <div className={`${styles.cardPerspectiveWrapper} ${styles.featured} `}>
+    <div className={`${styles.cardPerspectiveWrapper} ${styles.featured}`}>
       <Link to="/server-video">
       <motion.div 
         className={`${styles.contentWrapper}`}
@@ -88,8 +88,10 @@ function FeaturedCard(props) {
         onHoverEnd={hoverEnd}
         onMouseMove={onMouseOver}
       >
-        <div className={`${styles.card} ${styles[props.color]}`}>
-          <img src={props.image} alt={styles.imageAlt} className={styles.image} />
+        <div className={`${styles.card} ${styles.featuredContent} ${styles[props.color]}`}>
+          <div className={`${styles.figure} ${styles[props.alignment]}`}>
+            <img src={props.image} alt={styles.imageAlt} className={styles.image} />
+          </div>
           <h6 className={styles.title}>{props.title}</h6>
         </div>
       </motion.div>

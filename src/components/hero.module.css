@@ -1,35 +1,107 @@
 .hero {
   position: relative;
-  padding-top: 220px;
-  padding-bottom: 280px;
+  padding-top: 40px;
+  padding-bottom: 60px;
   grid-column-start: 1;
   grid-column-end: 13;
 }
 
+.innerGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+@media screen and (min-width: 960px) {
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 240px;
+  }
+}
+
 .titleWrapper {
   overflow: hidden;
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+@media screen and (min-width: 960px) {
+  .titleWrapper {
+    grid-column-start: 1;
+    grid-column-end: 11;
+  }
 }
 
 .title {
-  max-width: 80%;
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 160%;
   color: var(--color-black);
 }
 
+@media screen and (min-width: 960px) {
+  .title {
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .titleWrapper {
+    grid-column-end: 11;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .titleWrapper {
+    grid-column-end: 10;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .titleWrapper {
+    grid-column-end: 9;
+  }
+}
+
 .details {
-  display: flex;
-  flex-flow: row;
-  padding-top: 60px;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 960px) {
+  .details {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .details {
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
 }
 
 .detail {
-  /* TODO Fix this magic number */
-  padding-right: 106px;
   display: flex;
   flex-flow: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
   overflow: hidden;
 }
@@ -46,11 +118,18 @@
 }
 
 .label {
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   padding-left: 20px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 24px;
   color: var(--color-black);
+}
+
+@media screen and (min-width: 960px) {
+  .label {
+    font-size: 24px;
+  }
 }
 

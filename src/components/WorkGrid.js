@@ -10,7 +10,7 @@ function WorkGrid(props) {
   // Scroll Reveal
   // https://github.com/wellyshen/react-cool-inview
   const { ref, inView, scrollDirection, entry, observe, unobserve } = useInView({
-      threshold: 0.05, // Default is 0
+      threshold: 0.0, // Default is 0
       unobserveOnEnter: true,
       onEnter: ({ scrollDirection, entry, observe, unobserve }) => {
         setVisibleState("visible");
@@ -25,7 +25,7 @@ function WorkGrid(props) {
     initial: {
       opacity: 0.25,
       scale: 0.98,
-      y: 100,
+      y: 60,
       transition: {
         type: "spring",
         duration: 0.8
@@ -79,6 +79,7 @@ function WorkGrid(props) {
             color="green"
             title="Design Tooling"
             size="normal"
+            alignment="bottom"
             onProjectEnter={projectEnter}
             onProjectLeave={projectLeave}
           />
@@ -97,6 +98,7 @@ function WorkGrid(props) {
             title="SteelSeries"
             color="pink"
             size="normal"
+            alignment="bottom"
             onProjectEnter={projectEnter}
             onProjectLeave={projectLeave}
           />

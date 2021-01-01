@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: row;
   width: 100%;
-  padding: 40px 0 0;
+  padding: 20px 0 0;
   grid-column-start: 1;
   grid-column-end: 13;
   font-size: 18px;
@@ -19,7 +19,7 @@
 .navLink {
   position: relative;
   z-index: 5;
-  padding-left: 60px;
+  padding-left: 30px;
   transition: color 200ms ease;
 }
 
@@ -27,4 +27,14 @@
 .logo:hover {
   color: var(--color-blue);
   text-decoration: none;
+}
+
+@media screen and (min-width: 960px) {
+  .nav {
+    padding: 40px 0 0;
+  }
+
+  .navLink {
+    padding-left: 60px;
+  }
 }

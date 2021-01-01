@@ -88,7 +88,9 @@ function Card(props) {
           onMouseMove={onMouseOver}
         >
           <div className={`${styles.card} ${styles[props.color]}`}>
-            <img src={props.image} alt={props.imageAlt} className={styles.image} />
+            <div className={`${styles.figure} ${styles[props.alignment]}`}>
+              <img src={props.image} alt={props.imageAlt} className={styles.image} />
+            </div>
             <h6 className={styles.title}>{props.title}</h6>
           </div>
         </motion.div>
