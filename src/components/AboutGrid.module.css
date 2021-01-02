@@ -1,6 +1,6 @@
 /* This is a nested grid with two columns */
 .aboutGrid {
-  padding: 0 0 120px;
+  padding: 0 0 60px;
   grid-column-start: 1;
   grid-column-end: 13;
   display: grid;

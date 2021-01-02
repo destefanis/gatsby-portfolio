@@ -227,6 +227,10 @@ img {
   .previous-work {
     grid-column: 7 / 11;
   }
+
+  .next-project {
+    margin-bottom: 40px;
+  }
 }
 
 .list {
