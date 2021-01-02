@@ -57,7 +57,7 @@ const AboutPage = () => {
               <div className={styles.smallVideo}>
                 <video src="https://newportfolio.s3-us-west-2.amazonaws.com/wave.mp4" className={styles.video} autoPlay muted loop />
               </div>
-              <div className={styles.smallVideo}>
+              <div className={`${styles.smallVideo} ${styles.second}`}>
                 <video src="https://newportfolio.s3-us-west-2.amazonaws.com/franklin.mp4" className={styles.video} autoPlay muted loop />
               </div>
             </motion.div>

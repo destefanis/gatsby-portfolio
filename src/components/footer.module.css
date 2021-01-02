@@ -85,11 +85,14 @@
   }
 
   .socialLink {
+    font-size: 18px;
+  }
+
+  .socialLinks {
+    margin: 0 0 0 auto;
     align-self: flex-end;
     padding-right: 0;
     padding-left: 60px;
-    font-size: 18px;
-    margin: 0 0 0 auto;
   }
 
   .openSource {

@@ -72,17 +72,21 @@ body {
   grid-row-gap: 20px;
 }
 
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 @media screen and (min-width: 960px) {
   .work-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
   }
-}
 
-.container {
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 0 60px;
+  .container {
+    padding: 0 60px;
+  }
 }
 
 a {
@@ -100,34 +104,34 @@ img {
 }
 
 .h1 {
-  font-size: 42px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 1.6;
 }
 
 .h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
+  margin-bottom: 24px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.4;
 }
 
 .h3 {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 .h4 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .h5 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .h6 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -137,35 +141,92 @@ img {
 }
 
 .paragraph--large {
-  font-size: 32px;
+  font-size: 20px;
   line-height: 1.6;
 }
 
 .paragraph {
-  margin-bottom: 40px;
-  font-size: 24px;
+  margin-bottom: 20px;
+  font-size: 18x;
   font-weight: 500;
+}
+
+@media screen and (min-width: 960px) {
+  .h1 {
+    font-size: 42px;
+  }
+  
+  .h2 {
+    font-size: 36px;
+  }
+
+  .h3 {
+    font-size: 32px;
+  }
+
+  .h4 {
+    font-size: 24px;
+  }
+
+  .h5 {
+    font-size: 20px;
+  }
+  
+  .h6 {
+    font-size: 16px;
+  }
+  
+  .paragraph--large {
+    font-size: 32px;
+  }
+
+  .paragraph {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
 }
 
 /* About */
 .about {
-  padding-bottom: 280px;
+  padding-bottom: 60px;
 }
 
 .bio {
-  grid-column: 2 / 9;
+  grid-column: 1 / 13;
 }
 
 .bio-body {
-  grid-column: 2 / 8;
+  grid-column: 1 / 13;
 }
 
 .experience {
-  grid-column: 2 / 6;
+  grid-column: 1 / 13;
 }
 
 .previous-work {
-  grid-column: 7 / 11;
+  grid-column: 1 / 13;
+}
+
+@media screen and (min-width: 960px) {
+  .about {
+    padding-bottom: 280px;
+  }
+
+  .bio {
+    grid-column: 2 / 9;
+  }
+  
+  .bio-body {
+    grid-column: 2 / 8;
+  }
+  
+  .experience {
+    grid-column: 2 / 6;
+  }
+  
+  .previous-work {
+    grid-column: 7 / 11;
+  }
 }
 
 .list {
