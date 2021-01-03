@@ -3,5 +3,5 @@ module.exports = {
     title: "Gatsby Portfolio",
     pathPrefix: "/gatsby-portfolio",
   },
-  plugins: ["gatsby-plugin-react-helmet"],
+  plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp"],
 };
