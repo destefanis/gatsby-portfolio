@@ -123,6 +123,7 @@ const ServerVideo = () => {
             <figure className="project-image project-image-8">
               <img src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-optimized/server-video-old-desgin.jpg"
             alt="Previous design of Discord video chat released in 2017" />
+              <figcaption>Our previous video chat for up to 10 people</figcaption>
             </figure>
 
           <div className="body">
@@ -144,7 +145,7 @@ const ServerVideo = () => {
               <img src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-optimized/server-video-tiles.jpg"
               alt="Server video tiles, one without video enabled and one with of a young woman" />
             </figure>
-            <p>
+            <p className="paragraph">
               Make users who have don’t have a camera (or have theirs turned off) <em>still feel like they’re part of the group</em>.
             </p>
           </div>
@@ -191,6 +192,7 @@ const ServerVideo = () => {
             <figure className="inline-project-image">
               <img src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-optimized/server-video-tile-views.jpg"
             alt="Three variations grids depicting the three views of Server Video, Grid, Focused, and Full" />
+            <figcaption>Grid, Focused, and Full</figcaption>
             </figure>
             <p className="paragraph">
               We named these Grid View, Focused View (one video larger), and Full View.

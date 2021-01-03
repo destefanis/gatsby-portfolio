@@ -71,6 +71,12 @@
   grid-column-end: 12;
 }
 
+figcaption {
+  padding: 20px 0;
+  font-size: 16px;
+  text-align: center; 
+}
+
 @media screen and (min-width: 960px) {
   .body {
     grid-column-start: 4;
