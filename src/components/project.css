@@ -45,9 +45,9 @@
 }
 
 .project-image {
-  grid-column-start: 2;
-  grid-column-end: 12;
-  margin-bottom: 80px;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  margin-bottom: 40px;
 }
 
 .project-image img {
@@ -102,6 +102,12 @@
 
   .project-lede {
     margin-bottom: 20px;
+  }
+
+  .project-image {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    margin-bottom: 80px;
   }
 
   .project-image-8 {
