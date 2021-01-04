@@ -225,9 +225,6 @@ const ServerVideo = () => {
                 <li>Supporting the engineers through development up until launch</li>
               </ul>
               <p className="paragraph">
-                As the sole designer on this project my role was:
-            </p>
-              <p className="paragraph">
                 Given the heavy interactive nature of this project, the team elected to further define the problem through multiple rapid iterations which I’ll cover later.
             </p>
             </div>
