@@ -1,6 +1,6 @@
 import * as React from "react"
-import { useState } from "react"
-import { motion } from "framer-motion"
+import { useState, useRef } from "react"
+import { motion, useViewportScroll } from "framer-motion"
 import { Link } from "gatsby"
 
 import ClientOnly from "../components/ClientOnly.js"
@@ -17,9 +17,11 @@ import "../components/project.css"
 
 
 const ServerVideo = () => {
-
   const [cursorText, setCursorText] = useState("");
   const [cursorVariant, setCursorVariant] = useState("default");
+
+  const ref = useRef()
+  const { scrollYProgress } = useViewportScroll();
 
   function projectEnter(event) {
     setCursorText("View");
@@ -44,27 +46,35 @@ const ServerVideo = () => {
   const imageVariants = {
     initial: {
       opacity: 0,
-      y: 140
+      y: 240,
+      transition: {
+        type: "spring",
+        delay: 0.2,
+        duration: 0.8,
+        bounce: 0.5,
+      }
     },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
+        type: "spring",
         delay: 0.2,
-        duration: 0.6,
+        duration: 1.2,
+        bounce: 0.25,
       }
     }
   };
 
-  const cardVariants = {
+  const backgroundVariants = {
     initial: {
       opacity: 1,
       y: 0,
-      x: -200,
-      scale: 0.6,
+      x: 0,
+      scale: 0.4,
       transition: {
         type: "spring",
-        duration: 0.6
+        duration: 1,
       }
     },
     visible: {
@@ -74,7 +84,7 @@ const ServerVideo = () => {
       scale: 1,
       transition: {
         type: "spring",
-        duration: 0.6
+        duration: 1
       }
     }
   };
@@ -86,17 +96,20 @@ const ServerVideo = () => {
           <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
         </ClientOnly>
 
-        <div className="project-hero-wrapper">
+        <div className="project-hero-wrapper" ref={ref}>
           <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />
           <div className="project-hero">
-            <motion.figure className="project-hero-image" initial="initial"
-          animate="visible"
-          variants={imageVariants}>
-              <img src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-optimized/server-video-hero.png"
+            <motion.figure 
+              className="project-hero-image" 
+              initial="initial"
+              animate="visible"
+              variants={imageVariants}>
+              <motion.img 
+                src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-optimized/server-video-hero.png"
                 alt="Four mobile phones displaying server video project for Discord" />
             </motion.figure>
           </div>
-          <motion.div className="project-hero-background pink" variants={cardVariants}
+          <motion.div className="project-hero-background pink" variants={backgroundVariants}
               initial="initial"
               animate="visible"
               layout>
