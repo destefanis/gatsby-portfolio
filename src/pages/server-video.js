@@ -99,6 +99,7 @@ const ServerVideo = () => {
         <div className="project-hero-wrapper" ref={ref}>
           <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />
           <div className="project-hero">
+          <ClientOnly>
             <motion.figure 
               className="project-hero-image" 
               initial="initial"
@@ -107,7 +108,8 @@ const ServerVideo = () => {
               <motion.img 
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-optimized/server-video-hero.png"
                 alt="Four mobile phones displaying server video project for Discord" />
-            </motion.figure>
+              </motion.figure>
+            </ClientOnly>
           </div>
           <motion.div className="project-hero-background pink" variants={backgroundVariants}
               initial="initial"
