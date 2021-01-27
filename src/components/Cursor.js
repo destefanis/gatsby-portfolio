@@ -15,7 +15,7 @@ function Cursor(props) {
 
   const variants = {
     default: {
-      opacity: 1,
+      opacity: 0,
       height: 10,
       width: 10,
       fontSize: "16px",
