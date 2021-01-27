@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useState } from "react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 
 import Cursor from "../components/Cursor.js"
 import ClientOnly from "../components/ClientOnly.js"
@@ -39,20 +39,45 @@ const IndexPage = () => {
     setCursorVariant("link");
   }
 
+  // const pageVariants = {
+  //   initial: { opacity: 0, y: 20 },
+  //   enter: { opacity: 1, y: 0 },
+  //   exit: { opacity: 0, y: -40 }
+  // };
+  const duration = 0.3
+
+  const pageVariants = {
+    initial: {
+      opacity: 0,
+      y: 20,
+    },
+    enter: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: duration,
+        delay: duration,
+        when: "beforeChildren",
+      },
+    },
+    exit: {
+      opacity: 0,
+      y: -20,
+      transition: { duration: duration },
+    },
+  }
 
   return (
-    <main>
-      <div>
-        <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
-        <Hero text="I’m a designer who’s passionate about solving problems and creating delightful user experiences." details={true}/>
-        <ClientOnly>
-          <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
-          <WorkGrid onProjectEnter={projectEnter} onProjectLeave={cursorLeave} />
-          <AboutSection />
-        </ClientOnly>
-        <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
-      </div>
-    </main>
+    <motion.div variants={pageVariants} transition={{ type: "spring", duration: 1, delayChildren: 0.1 }} exit="exit" animate="enter" initial="initial">
+      <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
+      <Hero text="I’m a designer who’s passionate about solving problems and creating delightful user experiences." details={true}/>
+      <ClientOnly>
+        <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
+        <WorkGrid onProjectEnter={projectEnter} onProjectLeave={cursorLeave} />
+        <AboutSection />
+      </ClientOnly>
+      <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
+    </motion.div>
   )
 }
 

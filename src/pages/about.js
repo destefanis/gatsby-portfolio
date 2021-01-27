@@ -38,9 +38,37 @@ const AboutPage = () => {
     setCursorVariant("link");
   }
 
+  // const pageVariants = {
+  //   initial: { opacity: 0, y: 40 },
+  //   enter: { opacity: 1, y: 0 },
+  //   exit: { opacity: 0, y: -40 }
+  // };
+
+  const duration = 0.25
+
+  const pageVariants = {
+    initial: {
+      opacity: 0,
+      y: 20,
+    },
+    enter: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: duration,
+        delay: duration,
+        when: "beforeChildren",
+      },
+    },
+    exit: {
+      opacity: 0,
+      y: -20,
+      transition: { duration: duration },
+    },
+  }
+
   return (
-    <main>
-      <div>
+      <motion.div variants={pageVariants} transition={{ type: "spring", duration: 1, delayChildren: 0.1 }} exit="exit" animate="enter" initial="initial">
         <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
         <Hero text="I’m a husband, dad to three pets, and a designer who’s trying not to take himself too seriously." details={false} />
   
@@ -206,8 +234,7 @@ const AboutPage = () => {
         </motion.section>
         <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
 
-      </div>
-    </main>
+      </motion.div>
   )
 }
 
