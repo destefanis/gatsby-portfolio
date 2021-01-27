@@ -54,6 +54,12 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .titleWrapper {
     grid-column-end: 11;
   }
@@ -67,7 +73,7 @@
 
 @media screen and (min-width: 1800px) {
   .titleWrapper {
-    grid-column-end: 9;
+    grid-column-end: 11;
   }
 }
 
