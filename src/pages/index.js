@@ -68,7 +68,7 @@ const IndexPage = () => {
   }
 
   return (
-    <motion.div variants={pageVariants} transition={{ type: "spring", duration: 1, delayChildren: 0.1 }} exit="exit" animate="enter" initial="initial">
+    <main>
       <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
       <Hero text="I’m a designer who’s passionate about solving problems and creating delightful user experiences." details={true}/>
       <ClientOnly>
@@ -77,7 +77,7 @@ const IndexPage = () => {
         <AboutSection />
       </ClientOnly>
       <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
-    </motion.div>
+    </main>
   )
 }
 

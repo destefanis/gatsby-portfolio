@@ -1,18 +1,9 @@
 import * as React from 'react'
-import { motion, AnimatePresence } from "framer-motion"
-
-// function PageWrapper(props) {
-//   return (
-//     <div>
-//       <AnimatePresence>
-//         {this.props.children}
-//       </AnimatePresence>
-//     </div>
-//   )
-// }
+import { motion, AnimatePresence } from 'framer-motion'
+import Layout from './Layout.js'
 
 const PageWrapper = ({ element, props }, pluginOptions) => {
-  return <div {...props}><AnimatePresence>{element}</AnimatePresence></div>
+  return <Layout {...props}>{element}</Layout>
 }
 
 export default PageWrapper
