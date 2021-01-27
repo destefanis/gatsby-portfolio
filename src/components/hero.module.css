@@ -73,7 +73,7 @@
 
 @media screen and (min-width: 1800px) {
   .titleWrapper {
-    grid-column-end: 11;
+    grid-column-end: 10;
   }
 }
 
