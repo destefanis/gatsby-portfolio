@@ -1,6 +1,7 @@
 import * as React from "react"
 import { motion } from "framer-motion"
 import { useMousePosition } from "./useMousePosition";
+import MediaQuery from 'react-responsive'
 
 function Cursor(props) {
   const position = useMousePosition();
@@ -15,7 +16,7 @@ function Cursor(props) {
 
   const variants = {
     default: {
-      opacity: 0,
+      opacity: 1,
       height: 10,
       width: 10,
       fontSize: "16px",
@@ -100,15 +101,17 @@ function Cursor(props) {
   };
 
   return (
-    <motion.div
-      variants={variants}
-      className="circle"
-      animate={props.cursorVariant}
-      transition={spring}
-      initial="initial"
-    >
-      <span className="cursor-text">{props.cursorText}</span>
-    </motion.div>
+    <MediaQuery minWidth={1024}>
+      <motion.div
+        variants={variants}
+        className="circle"
+        animate={props.cursorVariant}
+        transition={spring}
+        initial="initial"
+      >
+        <span className="cursor-text">{props.cursorText}</span>
+      </motion.div>
+    </MediaQuery>
   )
 }
 

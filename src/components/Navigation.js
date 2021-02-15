@@ -24,8 +24,9 @@ function Navigation(props) {
           <Link to="/" className={styles.logo} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}><span>Daniel Destefanis</span></Link>
         </div>
         <div className={styles.navList}>
-          <Link to="/about" className={styles.navLink} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}><span>About</span></Link>
-          <Link to="/" className={styles.navLink} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}><span>Work</span></Link>
+          {/* <Link to="/" className={styles.navLink} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}><span>About</span></Link>
+          <Link to="/" className={styles.navLink} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}><span>Work</span></Link> */}
+          <a href="#contact">Contact</a>
         </div>
       </motion.nav>
     </div>

@@ -19,7 +19,7 @@ function Card(props) {
   const xy = useMotionValue(centerPoint);
 
   // How much should we rotate?
-  const tx = 0.003;
+  const tx = -0.0035;
 
   // Get rotateY
   const transformX = interpolate([0, width], [width * tx, width * tx * -1]);

@@ -20,7 +20,7 @@ function Footer(props) {
     props.onLinkLeave();
   }
   return (
-    <div className="grid grid--full">
+    <div id="contact" className="grid grid--full contact">
       <div className={styles.footer}>
         <div className={styles.card} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
           <h2 className={styles.title}>
@@ -28,13 +28,16 @@ function Footer(props) {
             {/* <img src="/message-circle.svg" alt="Message Icon" className={styles.icon} /> */}
           </h2>
           <h2 className={`${styles.title} ${styles.contact} `}>
-            Let's chat. 
+            <a href="mailto:someone@yoursite.com">Let's chat.</a>
             {/* <img src="/message-circle.svg" alt="Message Icon" className={styles.icon} /> */}
           </h2>
         </div>
         <nav className={styles.footerLinks}>
-          <div className={styles.openSource}>
+          {/* <div className={styles.openSource}>
             View this portfolio on <a href="https://www.figma.com/@daniel">Figma</a> or <a href="https://github.com/destefanis/gatsby-portfolio">Github</a>.
+          </div> */}
+          <div className={styles.openSource}>
+            View my open source work on <a href="https://www.figma.com/@daniel">Figma</a>.
           </div>
           <div className={styles.socialLinks}>
             <a href="https://twitter.com/daniel__designs" target="_blank" onMouseEnter={linkEnter} onMouseLeave={linkLeave} className={styles.socialLink}>
