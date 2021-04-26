@@ -12,6 +12,11 @@ function Navigation(props) {
   function mouseLeave(event) {
     props.onLinkLeave();
   }
+
+  function updateNav(event) {
+    props.onNavChange();
+  }
+
   return (
     <div className="grid grid--full">
       <motion.nav 
@@ -25,7 +30,7 @@ function Navigation(props) {
         </div>
         <div className={styles.navList}>
           <Link to="/about" className={styles.navLink} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}><span>About</span></Link>
-          <Link to="/" className={styles.navLink} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}><span>Work</span></Link>
+          <Link to="/" className={styles.navLink} onClick={updateNav} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}><span>Work</span></Link>
         </div>
       </motion.nav>
     </div>
