@@ -407,6 +407,13 @@ const ServerVideo = () => {
               </p>
             </div>
 
+            <figure className="project-image project-image--full">
+              <img 
+                alt="Three phones with screens displaying server video and young women watching their friend stream a social app."
+                src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/17-server-video-mobile-3up.png"
+              />
+            </figure>
+
           </section>
         </div>
 
