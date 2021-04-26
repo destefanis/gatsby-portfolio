@@ -20,7 +20,7 @@ function Footer(props) {
     props.onLinkLeave();
   }
   return (
-    <div className="grid grid--full">
+    <div id="contact" className="grid grid--full contact">
       <div className={styles.footer}>
         <div className={styles.card} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
           <h2 className={styles.title}>
@@ -28,7 +28,7 @@ function Footer(props) {
             {/* <img src="/message-circle.svg" alt="Message Icon" className={styles.icon} /> */}
           </h2>
           <h2 className={`${styles.title} ${styles.contact} `}>
-            Let's chat. 
+            <a href="mailto:someone@yoursite.com">Let's chat.</a>
             {/* <img src="/message-circle.svg" alt="Message Icon" className={styles.icon} /> */}
           </h2>
         </div>

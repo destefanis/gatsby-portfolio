@@ -135,8 +135,42 @@ const AboutPage = () => {
             </ul>
           </div>
           <div className="previous-work">
-            <h2 className="h2">Previous Work</h2>
+            <h2 className="h2">Writing</h2>
             <ul className="list">
+              <li className="list-item">
+                <h6 className="h6 timeline">
+                  2021 - Medium
+                </h6>
+                <h4 className="h4">
+                  <a href="https://medium.com/me/stats/post/c435e2f8851b">How to set up Custom Design Linting</a>
+                </h4>
+              </li>
+              <li className="list-item">
+                <h6 className="h6 timeline">
+                  2021 - Figma File
+                </h6>
+                <h4 className="h4">
+                  <a href="https://www.figma.com/community/file/942856928187155104">Intro to Figma Plugin Api</a>
+                </h4>
+              </li>
+              <li className="list-item">
+                <h6 className="h6 timeline">
+                  2020 - Medium
+                </h6>
+                <h4 className="h4">
+                  <a href="https://blog.discord.com/building-open-source-design-tools-to-improve-discords-design-workflow-9a25c29f9143">Building Open Source Plugins</a>
+                </h4>
+              </li>
+              <li className="list-item">
+                <h6 className="h6 timeline">
+                  2018 - Medium
+                </h6>
+                <h4 className="h4">
+                  <a href="https://blog.discord.com/redesigning-the-discord-overlay-cc31c6042d6d">Redesigning the Discord Overlay</a>
+                </h4>
+              </li>
+            </ul>
+            {/* <ul className="list">
               <li className="list-item">
                 <h6 className="h6 timeline">
                   2017 - Design and Engineering
@@ -174,7 +208,7 @@ const AboutPage = () => {
                   View LinkedIn ->
                 </h4>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </motion.section>
 
