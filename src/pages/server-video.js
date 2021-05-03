@@ -17,6 +17,7 @@ import "../components/project.css"
 
 
 const ServerVideo = () => {
+  const [navOpen, setNavOpen] = useState(false);
   const [cursorText, setCursorText] = useState("");
   const [cursorVariant, setCursorVariant] = useState("default");
 
@@ -41,6 +42,14 @@ const ServerVideo = () => {
   function linkEnter(event) {
     setCursorText("");
     setCursorVariant("link");
+  }
+
+  function updateNav(event) {
+    if (navOpen === true) {
+      setNavOpen(false);
+    } else {
+      setNavOpen(true);
+    }
   }
 
   const imageVariants = {

@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import Cursor from "../components/Cursor.js"
 import ClientOnly from "../components/ClientOnly.js"
 import Navigation from "../components/Navigation.js"
-import FullNavigation from "../components/FullNavigation.js"
 import Hero from "../components/Hero.js"
 import WorkGrid from "../components/WorkGrid.js"
 import AboutSection from "../components/AboutSection.js"
@@ -48,11 +47,6 @@ const IndexPage = () => {
     setCursorVariant("link");
   }
 
-  // const pageVariants = {
-  //   initial: { opacity: 0, y: 20 },
-  //   enter: { opacity: 1, y: 0 },
-  //   exit: { opacity: 0, y: -40 }
-  // };
   const duration = 0.3
 
   const pageVariants = {
@@ -78,8 +72,7 @@ const IndexPage = () => {
 
   return (
     <main>
-      <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave} onNavChange={updateNav}/>
-      <FullNavigation active={navOpen} onNavChange={updateNav} onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />
+      <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave} onNavChange={updateNav} active={navOpen}/>
       <Hero text="I’m a designer who’s passionate about solving problems and creating delightful user experiences." details={true}/>
       <ClientOnly>
         <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
