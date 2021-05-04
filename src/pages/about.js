@@ -15,7 +15,6 @@ import "../components/global.css"
 
 // markup
 const AboutPage = () => {
-  const [navOpen, setNavOpen] = useState(false);
   const [cursorText, setCursorText] = useState("");
   const [cursorVariant, setCursorVariant] = useState("default");
 
@@ -39,17 +38,9 @@ const AboutPage = () => {
     setCursorVariant("link");
   }
 
-  function updateNav(event) {
-    if (navOpen === true) {
-      setNavOpen(false);
-    } else {
-      setNavOpen(true);
-    }
-  }
-
   return (
       <main>
-        <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave} onNavChange={updateNav} active={navOpen}/>
+        <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />
         <Hero text="I’m a husband, dad to three pets, and a designer who’s trying not to take himself too seriously." details={false} />
   
         <ClientOnly>

@@ -31,7 +31,7 @@
 
 .project-hero-image {
   position: relative;
-  z-index: 10;
+  z-index: 5;
   margin: -30px auto 0;
   pointer-events: none;
 }

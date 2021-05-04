@@ -15,17 +15,8 @@ import "../components/global.css"
 
 // markup
 const IndexPage = () => {
-  const [navOpen, setNavOpen] = useState(false);
   const [cursorText, setCursorText] = useState("");
   const [cursorVariant, setCursorVariant] = useState("default");
-
-  function updateNav(event) {
-    if (navOpen === true) {
-      setNavOpen(false);
-    } else {
-      setNavOpen(true);
-    }
-  }
 
   function projectEnter(event) {
     setCursorText("View");
@@ -72,7 +63,7 @@ const IndexPage = () => {
 
   return (
     <main>
-      <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave} onNavChange={updateNav} active={navOpen}/>
+      <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
       <Hero text="I’m a designer who’s passionate about solving problems and creating delightful user experiences." details={true}/>
       <ClientOnly>
         <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
