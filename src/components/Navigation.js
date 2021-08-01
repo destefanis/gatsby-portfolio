@@ -202,8 +202,8 @@ function Navigation(props) {
                   <motion.li
                     variants={item}
                   >
-                    <Link to="/discord-onboarding" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
-                      <span>Discord Onboarding</span>
+                    <Link to="/discord-growth" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+                      <span>Discord Growth</span>
                     </Link>
                   </motion.li>
                   <motion.li

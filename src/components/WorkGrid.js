@@ -65,15 +65,17 @@ function WorkGrid(props) {
           />
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
-            imageAlt="Image of Destiny Medals Project"
+            link="discord-growth"
+            imageAlt="Phone displaying Discord Templates UI"
             color="blue"
-            title="Discord Onboarding"
+            title="Discord Growth"
             size="normal"
             onProjectEnter={projectEnter}
             onProjectLeave={projectLeave}
           />
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/design-tooling-image.png"
+            link="design-tooling"
             imageAlt="UI of Design Tooling Plugins in Figma"
             color="green"
             title="Design Tooling"
@@ -84,6 +86,7 @@ function WorkGrid(props) {
           />
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/destiny-medals-image.png"
+            link="destiny-medals"
             imageAlt="Image of Destiny Medals Project"
             title="Destiny Medals"
             color="purple"
@@ -93,6 +96,7 @@ function WorkGrid(props) {
           />
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/steelseries-image.png"
+            link="steelseries"
             imageAlt="SteelSeries Engine UI"
             title="SteelSeries"
             color="pink"

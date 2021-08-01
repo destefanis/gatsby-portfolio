@@ -3,6 +3,26 @@
   background: var(--color-pink);
 }
 
+.blue {
+  background: var(--color-blue);
+}
+
+.yellow {
+  background: var(--color-yellow);
+}
+
+.purple {
+  background: var(--color-purple);
+}
+
+.green {
+  background: var(--color-green);
+}
+
+.teal {
+  background: var(--color-teal);
+}
+
 .project-hero-wrapper {
   position: relative;
   height: 480px;

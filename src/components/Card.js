@@ -67,34 +67,36 @@ function Card(props) {
 
   return (
       <div className={`${styles.cardPerspectiveWrapper}`}>
-        <motion.div 
-          className={`${styles.contentWrapper}`}
-          style={{
-            scale: 1,
-            rotateX: springX,
-            rotateY: springY
-          }}
-          onTapCancel={(e) => {
-            setTapped(false);
-            onMouseOver(e);
-          }}
-          onTapStart={() => {
-            setTapped(true);
-          }}
-          onTap={(e) => {
-            setTapped(false);
-          }}
-          onHoverStart={hoverStart}
-          onHoverEnd={hoverEnd}
-          onMouseMove={onMouseOver}
-        >
-          <div className={`${styles.card} ${styles[props.color]}`}>
-            <div className={`${styles.figure} ${styles[props.alignment]}`}>
-              <img src={props.image} alt={props.imageAlt} className={styles.image} />
+        <Link to={props.link}>
+          <motion.div 
+            className={`${styles.contentWrapper}`}
+            style={{
+              scale: 1,
+              rotateX: springX,
+              rotateY: springY
+            }}
+            onTapCancel={(e) => {
+              setTapped(false);
+              onMouseOver(e);
+            }}
+            onTapStart={() => {
+              setTapped(true);
+            }}
+            onTap={(e) => {
+              setTapped(false);
+            }}
+            onHoverStart={hoverStart}
+            onHoverEnd={hoverEnd}
+            onMouseMove={onMouseOver}
+          >
+            <div className={`${styles.card} ${styles[props.color]}`}>
+              <div className={`${styles.figure} ${styles[props.alignment]}`}>
+                <img src={props.image} alt={props.imageAlt} className={styles.image} />
+              </div>
+              <h6 className={styles.title}>{props.title}</h6>
             </div>
-            <h6 className={styles.title}>{props.title}</h6>
-          </div>
-        </motion.div>
+          </motion.div>
+        </Link>
       </div>
   )
 }
