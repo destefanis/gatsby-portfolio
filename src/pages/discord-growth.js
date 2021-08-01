@@ -322,7 +322,7 @@ const DiscordGrowth = () => {
 
             <figure className="project-image project-image--full">
               <img alt="Three phones displaying various steps of the Find your Friends feature of Discord" 
-              src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/12-discord-growth.png" 
+              src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/13-discord-growth.png" 
               />
             </figure>
 
