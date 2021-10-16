@@ -219,7 +219,8 @@ const AboutPage = () => {
           <div className="grid work-grid">
             <Card
               image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
-              imageAlt="Image of Destiny Medals Project"
+              imageAlt="Image of Discord's Onboarding Screen"
+              link="/discord-growth"
               color="blue"
               title="Discord Onboarding"
               size="normal"
@@ -229,6 +230,7 @@ const AboutPage = () => {
             <Card
               image="https://newportfolio.s3-us-west-2.amazonaws.com/design-tooling-image.png"
               imageAlt="UI of Design Tooling Plugins in Figma"
+              link="/design-tooling"
               color="green"
               title="Design Tooling"
               size="normal"

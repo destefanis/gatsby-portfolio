@@ -280,10 +280,10 @@ const Steelseries = () => {
           <div className="grid work-grid">
             <Card
               image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
-              imageAlt="Image of Destiny Medals Project"
-              link="destiny-medals"
+              imageAlt="Image of Discords onboarding screen"
+              link="discord-growth"
               color="blue"
-              title="Discord Onboarding"
+              title="Discord Growth"
               size="normal"
               onProjectEnter={projectEnter}
               onProjectLeave={cursorLeave}

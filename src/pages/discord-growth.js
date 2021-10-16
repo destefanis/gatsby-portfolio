@@ -371,7 +371,7 @@ const DiscordGrowth = () => {
             <Card
               image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
               imageAlt="Image of Destiny Medals Project"
-              link="destiny-medals"
+              link="/destiny-medals"
               color="blue"
               title="Discord Onboarding"
               size="normal"
@@ -381,7 +381,7 @@ const DiscordGrowth = () => {
             <Card
               image="https://newportfolio.s3-us-west-2.amazonaws.com/design-tooling-image.png"
               imageAlt="UI of Design Tooling Plugins in Figma"
-              link="design-tooling"
+              link="/design-tooling"
               color="green"
               title="Design Tooling"
               size="normal"
