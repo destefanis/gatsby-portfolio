@@ -192,131 +192,77 @@ const DestinyMedals = () => {
               </p>
             </div>
 
-            <div className="image-2up">
-              <div class="image-with-caption">
-                <figure className="project-image project-image--half">
-                <img alt="Art for my Medium Article Building Open Source Design Tooling at Discord" 
-                  src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/3-tooling.png" 
-                />
-                </figure>
-                  <figcaption>
-                    <a href="https://blog.discord.com/building-open-source-design-tools-to-improve-discords-design-workflow-9a25c29f9143">
-                      “Building Open Source Design Tooling at Discord”
-                    </a>
-                  </figcaption>
-              </div>
-              <div className="image-with-caption">
-                <figure className="project-image project-image--half">
-                  <img
-                    src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/4-tooling.png"
-                    alt="Title slide for the talk In The File - Building Tools for your ideal workflow"
-                  />
-                </figure>
-                <figcaption>
-                    <a href="https://www.youtube.com/watch?v=mFaMpi7Pumg">
-                      In The File Livestream
-                    </a>
-                  </figcaption>
-              </div>
-            </div>
-
-            <div className="body">
-              <h2 className="h2">Design Lint</h2>
-              <p className="paragraph">
-                One of my most popular plugins, Design Lint has been downloaded 30,000+ times and has been used as a 
-                foundation for custom design linters at some of the world’s largest tech companies like Twitter and Lyft.
-              </p>
-              <p className="paragraph">
-                Common issues with developer handoff are missing design tokens, using the wrong colors for specific layers, 
-                and introducing styles that aren’t part of a design system. Design Lint flags these errors in order 
-                to make the handoff process less prone to issues. 
-              </p>
-            </div>
-
             <figure className="project-image project-image--full">
-              <img alt="Design Lint landing page" 
-              src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/5-tooling.png"
+              <img alt="Character select screen for Destiny Medals" 
+              src="https://newportfolio.s3.us-west-2.amazonaws.com/destiny/3-destiny.png"
               />
             </figure>
-            <figure className="project-image project-image--full">
-              <video src="https://designlint.s3-us-west-2.amazonaws.com/design-lint-website-vid+(1).mp4" autoPlay muted loop />
-            </figure>
-            <figure className="project-image project-image--full">
-              <video src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/design-lint-update.mp4" autoPlay muted loop />
-            </figure>
+
 
             <div className="body">
-              <h2 className="h2">Auto Theme</h2>
+              <h2 className="h2">Frictionless match history on mobile</h2>
               <p className="paragraph">
-                Another plugin I built for our team automatically changes a designs themes from light to dark, or vice versa, using our design system colors.
+                By just using your gamertag or username, I could fetch a players match history going back 25+ matches vs the game only allowing 
+                you to look at one. There was no login, no remembering passwords.
               </p>
               <p className="paragraph">
-                This let’s us create designs in either theme in seconds. Since it’s such a common use case for designers, I open sourced the plugin for other teams to build off of.
+                The match history took the form of a stack of cards, which showed the level 
+                you played on, whether you won or lost, along with some other valuable meta data. 
+                By storing this public data in the URL, sharing matches was easy as copy and pasting.
               </p>
             </div>
 
             <figure className="project-image project-image--full">
-              <img alt="Mockup of Steelseries engine software, news page with articles and blog posts" 
-              src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/8-tooling.png"
+              <img alt="Character select screen for Destiny Medals" 
+              src="https://newportfolio.s3.us-west-2.amazonaws.com/destiny/4-destiny.png"
+              />
+            </figure>
+
+            <div className="body">
+              <h2 className="h2">Filling in the missing data</h2>
+              <p className="paragraph">
+                As I was building Destiny Medals I came to realize that the API didn’t have a 
+                full list of medals (the accolades earned during multiplayer matches). Pieces of 
+                this information were there, but the full list was incomplete.
+              </p>
+              <p className="paragraph">
+                I joined a Discord community for the Destiny 2 API and together we put together 
+                a complete list and made it open source on Github.
+              </p>
+              <p className="paragraph">
+                This meant Destiny Medals, and other stat apps, now had a more feature 
+                complete way of viewing your performance than the actual game did!
+              </p>
+            </div>
+
+            <figure className="project-image project-image--full">
+              <img alt="Match results screen for Destiny Medals showing stats, medals, and match score" 
+              src="https://newportfolio.s3.us-west-2.amazonaws.com/destiny/5-destiny.png"
               />
             </figure>
 
             <figure className="project-image project-image--full">
-              <video src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/auto-theme-example.mp4" autoPlay muted loop />
+              <img alt="Two mobile phones showing the match results screenshots of Destiny Medals" 
+              src="https://newportfolio.s3.us-west-2.amazonaws.com/destiny/6-destiny.png"
+              />
             </figure>
 
             <div className="body">
-              <h2 className="h2">Create Sticky Note</h2>
+              <h2 className="h2">Launch</h2>
               <p className="paragraph">
-                While managing design on the Discord growth team, I've found myself conducting a lot more brainstorms. As a team that uses Figjam often,
-                I created a utility to convert notes written before meetings and text layers into sticky notes automatically.
+                In January of 2018 I launched Destiny Medals as an open source site to the community. 
+                It ran for over a year and had a few hundred monthly users. Destiny 2 has been releasing updates 
+                for several years now so eventually my webapp was redudant. 
+              </p>
+              <p className="paragraph">
+                This project taught me a considerable amount about React, creating frictionless user experiences, 
+                and designing an interface around an API.
               </p>
             </div>
 
             <figure className="project-image project-image--full">
               <video src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/create-sticky-example-smaller.mp4" autoPlay muted loop />
             </figure>
-
-            <div className="body">
-              <h2 className="h2">Open Source</h2>
-              <p className="paragraph">
-                I’m a huge believer in the open source community. I’ve utilized countless open source libraries 
-                in the past when building software and projects of my own. As one way to contribute 
-                back to the community, all the tools I’ve built are open source and documented on <a href="https://github.com/destefanis">Github</a>.
-              </p>
-              <p className="paragraph">
-                I'll continue making open source tools as soon as I come across a new problem worth solving.
-                <a href="https://twitter.com/daniel__designs">Follow me on Twitter</a> for my latest work.
-              </p>
-            </div>
-
-            <div className="image-2up">
-              <div class="image-with-caption">
-                <figure className="project-image project-image--half">
-                <img alt="Title slide for the talk In The File - Building Tools for your ideal workflow" 
-                  src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/6-tooling.png" 
-                />
-                </figure>
-                  <figcaption>
-                    <a href="https://www.figma.com/community/file/943929739849217782">
-                      “Building Open Source Design Tooling at Discord Slides”
-                    </a>
-                  </figcaption>
-              </div>
-              <div className="image-with-caption">
-                <figure className="project-image project-image--half">
-                  <img
-                    src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/7-tooling.png"
-                    alt="Cover art for a slide deck for how to get starting making figma plugins"
-                  />
-                </figure>
-                <figcaption>
-                    <a href="https://www.figma.com/community/file/942856928187155104">
-                      Intro building Figma plugins
-                    </a>
-                  </figcaption>
-              </div>
-            </div>
 
           </section>
         </div>
