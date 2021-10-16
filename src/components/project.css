@@ -45,8 +45,12 @@
   align-content: center;
   justify-content: center;
   position: absolute;
-  /* height: 100%; */
   width: 100%;
+}
+
+.project-hero--bottom {
+  height: 100%;
+  align-content: flex-end;
 }
 
 .project-hero-image {
@@ -133,6 +137,10 @@ em {
   font-size: 16px;
 }
 
+.body a {
+  text-decoration: underline;
+}
+
 .project-title {
   font-weight: 600;
   font-size: 28px;
@@ -167,6 +175,14 @@ figcaption {
   text-align: center; 
 }
 
+figcaption a {
+  text-decoration: underline;
+}
+
+video {
+  border-radius: 24px;
+}
+
 .case-list {
   font-size: 16px;
   list-style: disc;
@@ -176,6 +192,10 @@ figcaption {
 
 .case-list li {
   margin-bottom: 20px;
+}
+
+.case-list a {
+  text-decoration: underline;
 }
 
 .project-about {
@@ -195,7 +215,7 @@ figcaption {
   }
 
   .body .paragraph {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .project-intro {
@@ -208,6 +228,10 @@ figcaption {
 
   .project-hero-image {
     margin: -80px auto 0;
+  }
+
+  .align-image-bottom {
+    margin: 20px auto 0;
   }
 
   .project-intro {
@@ -247,7 +271,7 @@ figcaption {
   }
 
   .case-list {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 

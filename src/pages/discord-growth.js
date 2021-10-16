@@ -340,7 +340,7 @@ const DiscordGrowth = () => {
 
             <figure className="project-image project-image--full">
               <img alt="Two phones displaying two variations of the Discord welcome splash screen on iOS" 
-              src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/13-discord-growth.png" 
+              src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/growth/14-discord-growth.png" 
               />
             </figure>
 

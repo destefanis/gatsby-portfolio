@@ -66,8 +66,8 @@ function Card(props) {
   }, [hover, xy, centerPoint]);
 
   return (
+    <Link to={props.link}>
       <div className={`${styles.cardPerspectiveWrapper}`}>
-        <Link to={props.link}>
           <motion.div 
             className={`${styles.contentWrapper}`}
             style={{
@@ -96,8 +96,8 @@ function Card(props) {
               <h6 className={styles.title}>{props.title}</h6>
             </div>
           </motion.div>
-        </Link>
-      </div>
+        </div>
+      </Link>
   )
 }
 
