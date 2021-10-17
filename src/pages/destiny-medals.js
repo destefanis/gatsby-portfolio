@@ -2,6 +2,7 @@ import * as React from "react"
 import { useState, useRef } from "react"
 import { motion, useViewportScroll } from "framer-motion"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import ClientOnly from "../components/ClientOnly.js"
 import Cursor from "../components/Cursor.js"
@@ -71,7 +72,12 @@ const DestinyMedals = () => {
   };
 
   return (
-    <main>
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Destiny Medals Case Study</title>
+        <link rel="canonical" href="https://danield.design/destiny-medals/" />
+      </Helmet>
       <div>
         <ClientOnly>
           <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
@@ -295,7 +301,7 @@ const DestinyMedals = () => {
 
         <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />
       </div>
-    </main>
+    </div>
   )
 }
 

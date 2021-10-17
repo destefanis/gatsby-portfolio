@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useState, useRef } from "react"
-import { motion, useViewportScroll } from "framer-motion"
-import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
+import { motion } from "framer-motion"
 
 import ClientOnly from "../components/ClientOnly.js"
 import Cursor from "../components/Cursor.js"
@@ -21,7 +21,7 @@ const Steelseries = () => {
   const [cursorVariant, setCursorVariant] = useState("default");
 
   const ref = useRef()
-  const { scrollYProgress } = useViewportScroll();
+  // const { scrollYProgress } = useViewportScroll();
 
   function projectEnter(event) {
     setCursorText("View");
@@ -71,7 +71,12 @@ const Steelseries = () => {
   };
 
   return (
-    <main>
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>SteelSeries Case Study</title>
+        <link rel="canonical" href="https://danield.design/steelseries/" />
+      </Helmet>
       <div>
         <ClientOnly>
           <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
@@ -179,7 +184,7 @@ const Steelseries = () => {
             <div className="image-2up">
               <div class="image-with-caption">
                 <figure className="project-image project-image--half">
-                <img alt="Steelseries Engine Before Image" 
+                <img alt="Steelseries Engine Before redesign" 
                   src="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/steelseries/3-steelseries.png" 
                 />
                 </figure>
@@ -303,7 +308,7 @@ const Steelseries = () => {
 
         <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />
       </div>
-    </main>
+    </div>
   )
 }
 

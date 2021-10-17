@@ -1,6 +1,7 @@
 import * as React from "react"
 import { useState } from "react"
 import { motion } from "framer-motion"
+import { Helmet } from "react-helmet"
 
 import ClientOnly from "../components/ClientOnly.js"
 import Cursor from "../components/Cursor.js"
@@ -44,7 +45,12 @@ const AboutPage = () => {
   }
 
   return (
-      <main>
+      <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>About Me</title>
+          <link rel="canonical" href="https://danield.design/about/" />
+        </Helmet>
         <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />
         <Hero text="I’m a husband, dad to three pets, and a designer who’s trying not to take himself too seriously." details={false} />
   
@@ -246,7 +252,7 @@ const AboutPage = () => {
         </motion.section>
         <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
 
-      </main>
+      </div>
   )
 }
 

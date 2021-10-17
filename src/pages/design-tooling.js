@@ -2,6 +2,7 @@ import * as React from "react"
 import { useState, useRef } from "react"
 import { motion, useViewportScroll } from "framer-motion"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import ClientOnly from "../components/ClientOnly.js"
 import Cursor from "../components/Cursor.js"
@@ -71,7 +72,12 @@ const DesignTooling = () => {
   };
 
   return (
-    <main>
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Design Tooling Case Study</title>
+        <link rel="canonical" href="https://danield.design/design-tooling/" />
+      </Helmet>
       <div>
         <ClientOnly>
           <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
@@ -351,7 +357,7 @@ const DesignTooling = () => {
 
         <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />
       </div>
-    </main>
+    </div>
   )
 }
 

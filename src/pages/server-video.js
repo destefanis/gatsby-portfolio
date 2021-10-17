@@ -1,8 +1,8 @@
 import * as React from "react"
 import { useState, useRef } from "react"
-import { motion, useViewportScroll } from "framer-motion"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet"
+import { motion } from "framer-motion"
+// import { StaticImage } from "gatsby-plugin-image"
 
 import ClientOnly from "../components/ClientOnly.js"
 import Cursor from "../components/Cursor.js"
@@ -22,7 +22,7 @@ const ServerVideo = () => {
   const [cursorVariant, setCursorVariant] = useState("default");
 
   const ref = useRef()
-  const { scrollYProgress } = useViewportScroll();
+  // const { scrollYProgress } = useViewportScroll();
 
   function projectEnter(event) {
     setCursorText("View");
@@ -72,7 +72,12 @@ const ServerVideo = () => {
   };
 
   return (
-    <main>
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Server Video Case Study</title>
+        <link rel="canonical" href="https://danield.design/server-video/" />
+      </Helmet>
       <div>
         <ClientOnly>
           <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
@@ -146,23 +151,24 @@ const ServerVideo = () => {
         <div className="grid">
           <section className="project-main">
             <figure className="project-image project-image--full">
-              {/* <img alt="Server video design on mobile and desktop devices" src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/1-server-video-desktop-and-mobile.png" /> */}
-              <StaticImage 
+              <img alt="Server video design on mobile and desktop devices" src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/1-server-video-desktop-and-mobile.png" />
+              {/* Using Static Image had a 1 point increase in performance but introduced more issues, future todo */}
+              {/* <StaticImage 
                 alt="Server video design on mobile and desktop devices"
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/1-server-video-desktop-and-mobile.png"
                 quality="100"
                 placeholder="blurUp"
                 backgroundColor="#f9f9f9"
                 durationFadeIn="200"
-                />
+                /> */}
             </figure>
             <div className="body">
               <h3 className="h3 project-about">Discord is one of the most popular social apps in the world but our video chat was limited to groups of 10 people. Our team was focused on bringing video to everyone. </h3>
             </div>
 
             <figure className="project-image project-image--full">
-              {/* <img alt="Two phones displaying people using server video" src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/2nd-mobile-server-video-example.png" /> */}
-              <StaticImage 
+              <img alt="Two phones displaying people using server video" src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/2nd-mobile-server-video-example.png" />
+              {/* <StaticImage 
                 alt="Two phones displaying people using server video"
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/2nd-mobile-server-video-example.png"
                 quality="100"
@@ -170,7 +176,7 @@ const ServerVideo = () => {
                 objectFit="contain"
                 backgroundColor="#f9f9f9"
                 durationFadeIn="200"
-                />
+                /> */}
             </figure>
 
             <div className="body">
@@ -194,11 +200,11 @@ const ServerVideo = () => {
             <div className="image-2up">
               <div class="image-with-caption">
                 <figure className="project-image project-image--half">
-                  {/* <img
+                  <img
                     src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/3rd-merge-projects.png"
                     alt="Illustration of our three projects merging into one"
-                  /> */}
-                  <StaticImage 
+                  />
+                  {/* <StaticImage 
                     src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/3rd-merge-projects.png"
                     alt="Illustration of our three projects merging into one"
                     quality="100"
@@ -206,17 +212,17 @@ const ServerVideo = () => {
                     objectFit="contain"
                     backgroundColor="#f9f9f9"
                     durationFadeIn="200"
-                  />
+                  /> */}
                 </figure>
                 <figcaption>Merging our three features into one.</figcaption>
               </div>
               <div className="image-with-caption">
                 <figure className="project-image project-image--half">
-                  {/* <img
+                  <img
                     src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/4-server-video-old-desgin.jpg"
                     alt="Six people using our legacy version of Discord Video chat in 2017"
-                  /> */}
-                  <StaticImage 
+                  />
+                  {/* <StaticImage 
                     src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/4-server-video-old-desgin.jpg"
                     alt="Six people using our legacy version of Discord Video chat in 2017"
                     quality="100"
@@ -224,7 +230,7 @@ const ServerVideo = () => {
                     objectFit="contain"
                     backgroundColor="#f9f9f9"
                     durationFadeIn="200"
-                  />
+                  /> */}
                 </figure>
                 <figcaption>Our legacy video chat for up to 10 people.</figcaption>
               </div>
@@ -255,11 +261,11 @@ const ServerVideo = () => {
             <div className="image-2up">
               <div class="image-with-caption">
                 <figure className="project-image project-image--half">
-                  {/* <img
+                  <img
                     src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/5-video-tiles.png"
                     alt="Two video tiles from the Discord Server video desktop, one with a video enabled and one with just an avatar."
-                  /> */}
-                  <StaticImage 
+                  />
+                  {/* <StaticImage 
                     src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/5-video-tiles.png"
                     alt="Two video tiles from the Discord Server video desktop, one with a video enabled and one with just an avatar."
                     quality="100"
@@ -267,16 +273,16 @@ const ServerVideo = () => {
                     objectFit="contain"
                     backgroundColor="#f9f9f9"
                     durationFadeIn="200"
-                  />
+                  /> */}
                 </figure>
               </div>
               <div className="image-with-caption">
                 <figure className="project-image project-image--half">
-                  {/* <img
+                  <img
                     src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/6-mobile-tiles.png"
                     alt="Two video tiles from the Discord Server video on iOS, one with a video enabled and one with just an avatar."
-                  /> */}
-                  <StaticImage 
+                  />
+                  {/* <StaticImage 
                     src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/6-mobile-tiles.png"
                     alt="Two video tiles from the Discord Server video on iOS, one with a video enabled and one with just an avatar."
                     quality="100"
@@ -284,17 +290,17 @@ const ServerVideo = () => {
                     objectFit="contain"
                     backgroundColor="#f9f9f9"
                     durationFadeIn="200"
-                  />
+                  /> */}
                 </figure>
               </div>
             </div>
 
             <figure className="project-image project-image--full">
-              {/* <img 
+              <img 
                 alt="A pink rectangle with a mac book in the middle, on the screen are two women having a chat over discord server video"
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/7-video-chat-desktop.png" 
-              /> */}
-              <StaticImage 
+              />
+              {/* <StaticImage 
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/7-video-chat-desktop.png" 
                 alt="A pink rectangle with a mac book in the middle, on the screen are two women having a chat over discord server video"
                 quality="100"
@@ -302,7 +308,7 @@ const ServerVideo = () => {
                 objectFit="contain"
                 backgroundColor="#f9f9f9"
                 durationFadeIn="200"
-              />
+              /> */}
             </figure>
 
             <div className="body">
@@ -321,11 +327,11 @@ const ServerVideo = () => {
             </div>
 
             <figure className="project-image project-image--full">
-              {/* <img 
+              <img 
                 alt="Group of people hanging out on server video, displayed in a grid of rectangles."
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/8-video-grid-view.png" 
-              /> */}
-              <StaticImage 
+              />
+              {/* <StaticImage 
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/8-video-grid-view.png" 
                 alt="Group of people hanging out on server video, displayed in a grid of rectangles."
                 quality="100"
@@ -333,14 +339,14 @@ const ServerVideo = () => {
                 objectFit="contain"
                 backgroundColor="#f9f9f9"
                 durationFadeIn="200"
-              />
+              /> */}
             </figure>
             <figure className="project-image project-image--full">
-              {/* <img 
+              <img 
                 alt="Mobile grid of people using video on mobile to chat together."
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/9-mobile-grid-view.png" 
-              /> */}
-              <StaticImage 
+              />
+              {/* <StaticImage 
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/9-mobile-grid-view.png" 
                 alt="Mobile grid of people using video on mobile to chat together."
                 quality="100"
@@ -348,7 +354,7 @@ const ServerVideo = () => {
                 objectFit="contain"
                 backgroundColor="#f9f9f9"
                 durationFadeIn="200"
-              />
+              /> */}
             </figure>
             <div className="image-2up">
               <div class="image-with-caption">
@@ -358,11 +364,11 @@ const ServerVideo = () => {
               </div>
               <div className="image-with-caption">
                 <figure className="project-image project-image--half">
-                  {/* <img
+                  <img
                     src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/11-prototype-cropped.png"
                     alt="A screenshot of all the prototype flow examples tested for Server Video on mobile."
-                  /> */}
-                  <StaticImage 
+                  />
+                  {/* <StaticImage 
                     src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/11-prototype-cropped.png"
                     alt="A screenshot of all the prototype flow examples tested for Server Video on mobile."
                     quality="100"
@@ -370,7 +376,7 @@ const ServerVideo = () => {
                     objectFit="contain"
                     backgroundColor="#f9f9f9"
                     durationFadeIn="200"
-                  />
+                  /> */}
                 </figure>
               </div>
             </div>
@@ -395,12 +401,12 @@ const ServerVideo = () => {
                 person or screen a priority, but still see others as they spoke, react, or laughed.
               </p>
               <div className="image-with-caption project-image--inline">
-                {/* <img
+                  <img
                     src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/12-view-examples.png"
                     alt="Three simple collection of rectangles that demonstrate the different arrangement of videos for
-                    the focused, grid, and full views available in the server video feature."
-                /> */}
-                  <StaticImage 
+                      the focused, grid, and full views available in the server video feature."
+                  />
+                  {/* <StaticImage 
                     src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/12-view-examples.png"
                     alt="Three simple collection of rectangles that demonstrate the different arrangement of videos for
                     the focused, grid, and full views available in the server video feature."
@@ -409,17 +415,17 @@ const ServerVideo = () => {
                     objectFit="contain"
                     backgroundColor="#f9f9f9"
                     durationFadeIn="200"
-                  />
+                  /> */}
                 <figcaption>We decided on three different states, grid, focused, and full.</figcaption>
               </div>
             </div>
 
             <figure className="project-image project-image--full">
-              {/* <img 
+              <img 
                 alt="Collection of screens and lines that show prototype behavior for server video."
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/13-desktop-prototype.png" 
-              /> */}
-              <StaticImage 
+              />
+              {/* <StaticImage 
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/13-desktop-prototype.png" 
                 alt="Collection of screens and lines that show prototype behavior for server video."
                 quality="100"
@@ -427,14 +433,14 @@ const ServerVideo = () => {
                 objectFit="contain"
                 backgroundColor="#f9f9f9"
                 durationFadeIn="200"
-              />
+              /> */}
             </figure>
             <figure className="project-image project-image--full">
-              {/* <img 
+              <img 
                 alt="Macbook showing the 'Focused View' of Server Video in action with someone cooking on stream."
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/14-desktop-focused-view.png" 
-              /> */}
-              <StaticImage 
+              />
+              {/* <StaticImage 
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/14-desktop-focused-view.png" 
                 alt="Macbook showing the 'Focused View' of Server Video in action with someone cooking on stream."
                 quality="100"
@@ -442,7 +448,7 @@ const ServerVideo = () => {
                 objectFit="contain"
                 backgroundColor="#f9f9f9"
                 durationFadeIn="200"
-              />
+              /> */}
             </figure>
 
             <div className="body">
@@ -460,11 +466,11 @@ const ServerVideo = () => {
             </div>
             
             <figure className="project-image project-image--full">
-              {/* <img 
+              <img 
                 alt="Someone live streaming a game on Discord."
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/15-desktop-live.png" 
-              /> */}
-              <StaticImage 
+              />
+              {/* <StaticImage 
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/15-desktop-live.png"
                 alt="Someone live streaming a game on Discord."
                 quality="100"
@@ -472,14 +478,14 @@ const ServerVideo = () => {
                 objectFit="contain"
                 backgroundColor="#f9f9f9"
                 durationFadeIn="200"
-              />
+              /> */}
             </figure>
             <figure className="project-image project-image--full">
-              {/* <img 
+              <img 
                 alt="Screenshot of the Discord design system and all the variations of the video tiles used in the server video feature."
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/16-server-video-design-system.jpg"
-              /> */}
-              <StaticImage 
+              />
+              {/* <StaticImage 
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/16-server-video-design-system.jpg"
                 alt="Screenshot of the Discord design system and all the variations of the video tiles used in the server video feature."
                 quality="100"
@@ -487,14 +493,14 @@ const ServerVideo = () => {
                 objectFit="contain"
                 backgroundColor="#f9f9f9"
                 durationFadeIn="200"
-              />
+              /> */}
             </figure>
             <figure className="project-image project-image--full">
-              {/* <img 
+              <img 
                 alt="Two phones showing Server Video being used and someone watching a stream on mobile."
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/17-mobile-live.png" 
-              /> */}
-              <StaticImage 
+              />
+              {/* <StaticImage 
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/17-mobile-live.png"
                 alt="Two phones showing Server Video being used and someone watching a stream on mobile."
                 quality="100"
@@ -502,7 +508,7 @@ const ServerVideo = () => {
                 objectFit="contain"
                 backgroundColor="#f9f9f9"
                 durationFadeIn="200"
-              />
+              /> */}
             </figure>
 
             <div className="body">
@@ -553,11 +559,11 @@ const ServerVideo = () => {
             </div>
 
             <figure className="project-image project-image--full">
-              {/* <img 
+              <img 
                 alt="Three phones with screens displaying server video and young women watching their friend stream a social app."
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/17-server-video-mobile-3up.png"
-              /> */}
-              <StaticImage 
+              />
+              {/* <StaticImage 
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/17-server-video-mobile-3up.png"
                 alt="Three phones with screens displaying server video and young women watching their friend stream a social app."
                 quality="100"
@@ -565,7 +571,7 @@ const ServerVideo = () => {
                 objectFit="contain"
                 backgroundColor="#f9f9f9"
                 durationFadeIn="200"
-              />
+              /> */}
             </figure>
 
           </section>
@@ -602,7 +608,7 @@ const ServerVideo = () => {
 
         <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />
       </div>
-    </main>
+    </div>
   )
 }
 

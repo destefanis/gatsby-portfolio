@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useState, useRef } from "react"
+import { Helmet } from "react-helmet"
 import { motion, useViewportScroll } from "framer-motion"
 import { Link } from "gatsby"
 
@@ -71,7 +72,12 @@ const DiscordGrowth = () => {
   };
 
   return (
-    <main>
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Discord Growth Case Study</title>
+        <link rel="canonical" href="https://danield.design/discord-growth/" />
+      </Helmet>
       <div>
         <ClientOnly>
           <Cursor cursorText={cursorText} cursorVariant={cursorVariant} />
@@ -392,7 +398,7 @@ const DiscordGrowth = () => {
 
         <Footer onFooterEnter={contactEnter} onFooterLeave={cursorLeave} onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />
       </div>
-    </main>
+    </div>
   )
 }
 

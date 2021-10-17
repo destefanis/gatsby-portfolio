@@ -1,6 +1,7 @@
 import * as React from "react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { Helmet } from "react-helmet"
 
 import Cursor from "../components/Cursor.js"
 import ClientOnly from "../components/ClientOnly.js"
@@ -63,6 +64,11 @@ const IndexPage = () => {
 
   return (
     <main>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Daniel Destefanis Home</title>
+        <link rel="canonical" href="https://danield.design/" />
+      </Helmet>
       <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
       <Hero text="I’m a designer who’s passionate about solving problems and creating delightful user experiences." details={true}/>
       <ClientOnly>
