@@ -73,11 +73,15 @@
   justify-content: center;
   flex-flow: row;
   padding: 12px;
-  /* background: var(--color-white); */
   border-radius: 32px;
   line-height: 24px;
   cursor: pointer;
+  /* transition: background-color 200ms ease; */
 }
+
+/* .menu:hover {
+  background-color: var(--color-white);
+} */
 
 .menuLabel {
   margin: auto 0;
@@ -159,6 +163,12 @@
   font-size: 32px;
   margin-bottom: 16px;
   color: var(--color-black);
+  transition: 150ms ease;
+}
+
+.link:hover {
+  color: var(--color-blue);
+  text-decoration: none;
 }
 
 .socialIcons {

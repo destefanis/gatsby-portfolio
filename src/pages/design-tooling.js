@@ -328,20 +328,20 @@ const DesignTooling = () => {
           <div className="grid work-grid">
             <Card
               image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
-              imageAlt="Image of Discords onboarding screen"
+              imageAlt="Image of Discord's Onboarding Screen"
               link="/discord-growth"
               color="blue"
-              title="Discord Growth"
+              title="Discord Onboarding"
               size="normal"
               onProjectEnter={projectEnter}
               onProjectLeave={cursorLeave}
             />
-            <Card
-              image="https://newportfolio.s3-us-west-2.amazonaws.com/design-tooling-image.png"
-              imageAlt="UI of Design Tooling Plugins in Figma"
-              link="/design-tooling"
-              color="green"
-              title="Design Tooling"
+            <Card 
+              image="https://newportfolio.s3-us-west-2.amazonaws.com/destiny-medals-image.png"
+              link="/destiny-medals"
+              imageAlt="Image of Destiny Medals Project"
+              title="Destiny Medals"
+              color="purple"
               size="normal"
               onProjectEnter={projectEnter}
               onProjectLeave={cursorLeave}

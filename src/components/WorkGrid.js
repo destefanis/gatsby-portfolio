@@ -57,7 +57,7 @@ function WorkGrid(props) {
             // image="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-image.png"
             image="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/featured-tile.png"
             imageAlt="Discord server video ui"
-            link="server-video"
+            link="/server-video"
             color="pink"
             title="Server Video"
             key="Server Video"
@@ -67,7 +67,7 @@ function WorkGrid(props) {
           />
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
-            link="discord-growth"
+            link="/discord-growth"
             imageAlt="Phone displaying Discord Templates UI"
             color="blue"
             title="Discord Growth"
@@ -77,7 +77,7 @@ function WorkGrid(props) {
           />
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/design-tooling-image.png"
-            link="design-tooling"
+            link="/design-tooling"
             imageAlt="UI of Design Tooling Plugins in Figma"
             color="green"
             title="Design Tooling"
@@ -88,7 +88,7 @@ function WorkGrid(props) {
           />
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/destiny-medals-image.png"
-            link="destiny-medals"
+            link="/destiny-medals"
             imageAlt="Image of Destiny Medals Project"
             title="Destiny Medals"
             color="purple"
@@ -98,10 +98,10 @@ function WorkGrid(props) {
           />
           <Card 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/steelseries-image.png"
-            link="steelseries"
+            link="/steelseries"
             imageAlt="SteelSeries Engine UI"
             title="SteelSeries"
-            color="pink"
+            color="yellow"
             size="normal"
             alignment="bottom"
             onProjectEnter={projectEnter}

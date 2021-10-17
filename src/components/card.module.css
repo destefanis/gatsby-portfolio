@@ -41,6 +41,11 @@
   justify-content: center;
 }
 
+.featuredContent img {
+  max-width: 80%;
+  margin: auto;
+}
+
 .figure {
   margin: auto;
 }
@@ -69,6 +74,10 @@
   .featured {
     grid-column: span 2;
   }
+
+  .featuredContent img {
+    max-width: 60%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -85,6 +94,10 @@
 @media screen and (min-width: 1400px) {
   .card {
     height: 800px; 
+  }
+
+  .featuredContent img {
+    max-width: 76%;
   }
 }
 

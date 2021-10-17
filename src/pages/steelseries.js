@@ -278,22 +278,22 @@ const Steelseries = () => {
             <h2 className="h2 grid-title">Next Project</h2>
           </div>
           <div className="grid work-grid">
-            <Card
-              image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
-              imageAlt="Image of Discords onboarding screen"
-              link="discord-growth"
-              color="blue"
-              title="Discord Growth"
+            <Card 
+              image="https://newportfolio.s3-us-west-2.amazonaws.com/destiny-medals-image.png"
+              link="/destiny-medals"
+              imageAlt="Image of Destiny Medals Project"
+              title="Destiny Medals"
+              color="purple"
               size="normal"
               onProjectEnter={projectEnter}
               onProjectLeave={cursorLeave}
             />
             <Card
-              image="https://newportfolio.s3-us-west-2.amazonaws.com/design-tooling-image.png"
-              imageAlt="UI of Design Tooling Plugins in Figma"
-              link="design-tooling"
-              color="green"
-              title="Design Tooling"
+              image="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/server-video-tile-imagee.png"
+              imageAlt="Mockup of Discord's video chat feature with a person using it"
+              link="/server-video"
+              color="pink"
+              title="Server Video"
               size="normal"
               onProjectEnter={projectEnter}
               onProjectLeave={cursorLeave}

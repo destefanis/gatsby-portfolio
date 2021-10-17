@@ -270,22 +270,23 @@ const DestinyMedals = () => {
           </div>
           <div className="grid work-grid">
             <Card
-              image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
-              imageAlt="Image of Discords onboarding screen"
-              link="/discord-growth"
-              color="blue"
-              title="Discord Growth"
+              image="https://newportfolio.s3-us-west-2.amazonaws.com/design-tooling-image.png"
+              imageAlt="UI of Design Tooling Plugins in Figma"
+              link="/destiny-tooling"
+              color="green"
+              title="Design Tooling"
               size="normal"
               onProjectEnter={projectEnter}
               onProjectLeave={cursorLeave}
             />
-            <Card
-              image="https://newportfolio.s3-us-west-2.amazonaws.com/design-tooling-image.png"
-              imageAlt="UI of Design Tooling Plugins in Figma"
-              link="/design-tooling"
-              color="green"
-              title="Design Tooling"
+            <Card 
+              image="https://newportfolio.s3-us-west-2.amazonaws.com/steelseries-image.png"
+              link="/steelseries"
+              imageAlt="SteelSeries Engine UI"
+              title="SteelSeries"
+              color="yellow"
               size="normal"
+              alignment="bottom"
               onProjectEnter={projectEnter}
               onProjectLeave={cursorLeave}
             />

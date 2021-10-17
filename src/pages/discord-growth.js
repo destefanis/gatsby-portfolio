@@ -179,7 +179,7 @@ const DiscordGrowth = () => {
               <p className="paragraph">
                 I’d be remissed if I didn’t mention the amazingly talented designers that I now work with on this team. 
                 San Chung, Selina Her, and Brett Johnson all now produce the designs on our team. This case study will 
-                focus on the projects I primarily designed as we built the team to what it is today.
+                focus on the projects I primarily designed or co-designed as we built the team to what it is today.
               </p>
             </div>
 
@@ -235,6 +235,7 @@ const DiscordGrowth = () => {
             <div className="body">
               <h2 className="h2">Server templates</h2>
               <p className="paragraph">
+                San Chung and I co-designed this project into production across Desktop, Android, and iOS.
                 Discord Servers are hard to understand for new users. They’re a primitive that can be used for communities of 
                 800k people, an private book club for 10 of your fellow hobbyists, or for a classroom of 100.
               </p>
@@ -244,8 +245,7 @@ const DiscordGrowth = () => {
               </p>
               <p className="paragraph">
                 Server templates were designed around our most common uses cases “a place for friends”, “study group”, 
-                “an art community”. This screen did double duty of education about the product and helping them onboard. San Chung, the designer
-                I mentioned earlier helped with landing this project into production across iOS, Desktop and Android.
+                “an art community”. This screen did double duty of education about the product and helping them onboard.
               </p>
             </div>
 
@@ -303,7 +303,7 @@ const DiscordGrowth = () => {
               <p className="paragraph">
                 Another problem we had to solve was how to surface this feature for new users vs existing users. 
                 We decided to promote the feature before launch to help educated our existing users on how it would work. 
-                Selina Her, the designer I mentioned earlier worked side by side on this feature. She owned how it would fit within
+                <em>Selina Her</em>, the designer I mentioned earlier worked side by side on this feature. She owned how it would fit within
                 Discord's onboarding while I had started on how the feature a few months prior for existing users.
               </p>
             </div>
@@ -362,18 +362,17 @@ const DiscordGrowth = () => {
           </section>
         </div>
 
-
         <motion.section className="container next-project">
           <div className="grid">
             <h2 className="h2 grid-title">Next Project</h2>
           </div>
           <div className="grid work-grid">
             <Card
-              image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
-              imageAlt="Image of Destiny Medals Project"
-              link="/destiny-medals"
-              color="blue"
-              title="Discord Onboarding"
+              image="https://newportfolio.s3.us-west-2.amazonaws.com/server-video-final/server-video-tile-imagee.png"
+              imageAlt="Mockup of Discord's video chat feature with a person using it"
+              link="/server-video"
+              color="pink"
+              title="Server Video"
               size="normal"
               onProjectEnter={projectEnter}
               onProjectLeave={cursorLeave}

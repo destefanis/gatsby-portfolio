@@ -425,8 +425,8 @@ const ServerVideo = () => {
           <div className="grid work-grid">
             <Card
               image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
-              imageAlt="Image of Destiny Medals Project"
-              link="/destiny-medals"
+              imageAlt="Image of Discord's Onboarding Screen"
+              link="/discord-growth"
               color="blue"
               title="Discord Onboarding"
               size="normal"
