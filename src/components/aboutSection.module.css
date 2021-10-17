@@ -1,10 +1,18 @@
 .aboutSection {
-  padding: 160px 0 160px;
+  padding: 40px 20px 40px;
   color: var(--color-black);
   grid-column-start: 1;
   grid-column-end: 13;
   display: flex;
   flex-flow: column-reverse;
+  text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+  .aboutSection {
+    padding: 160px 0 160px;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {

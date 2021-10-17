@@ -31,6 +31,10 @@
   color: var(--color-blue);
 }
 
+.contact a:hover {
+  text-decoration: underline;
+}
+
 .contact {
   color: var(--color-blue);
 }

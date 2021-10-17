@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: row;
   width: 100%;
-  padding: 20px 0 0;
+  padding: 12px 0 0;
   grid-column-start: 1;
   grid-column-end: 13;
   font-size: 14px;
@@ -12,7 +12,7 @@
 }
 
 .placeholder {
-  height: 68px;
+  height: 44px;
   content: "";
   width: 100%;
 }
@@ -26,12 +26,23 @@
   width: 100%;
   max-width: calc(100% - 40px);
   z-index: 100;
+  background: var(--color-white);
 }
 
 @media screen and (min-width: 960px) {
+
+  .nav {
+    padding: 20px 0 0;
+  }
+
   .fixedNav {
     padding: 0 60px;
     max-width: calc(100% - 120px);
+    background: none;
+  }
+
+  .placeholder {
+    height: 68px;
   }
 }
 
@@ -93,6 +104,7 @@
   margin-right: 12px;
   height: 24px;
   width: 24px;
+  top: 1px;
 }
 
 .icon {
