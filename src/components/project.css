@@ -25,7 +25,7 @@
 
 .project-hero-wrapper {
   position: relative;
-  height: 420px;
+  height: 340px;
   overflow: hidden;
 }
 
@@ -46,7 +46,7 @@
   justify-content: center;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 44px);
 }
 
 .project-hero--bottom {
@@ -57,7 +57,6 @@
 .project-hero-image {
   position: relative;
   z-index: 5;
-  /* margin: -30px auto 0; */
   margin: auto;
   pointer-events: none;
 }
@@ -65,18 +64,17 @@
 .align-image-bottom {
   margin: 60px auto 0;
   padding: 0 20px;
-  max-width: 76%;
 }
 
 .project-intro {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
   grid-column-start: 1;
   grid-column-end: 13;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-row-gap: 8px;
 }
 
 .project-main {
@@ -110,7 +108,6 @@
 }
 
 .project-image {
-  /* margin-bottom: 40px; */
   background: var(--color-grey);
   border-radius: 24px;
   display: flex;
@@ -122,9 +119,6 @@
 .project-video {
   background: var(--color-grey);
   border-radius: 24px;
-  /* display: flex;
-  align-content: center;
-  justify-content: center; */
 }
 
 .project-image img {
@@ -215,10 +209,24 @@ video {
   grid-template-columns: repeat(1, 1fr);
 }
 
+.first-detail {
+  grid-column-start: 1;
+  grid-column-end: 12;
+}
+
+.second-detail {
+  grid-column-start: 1;
+  grid-column-end: 12;
+}
+
 @media screen and (min-width: 960px) {
 
   .project-main {
     margin-bottom: 320px;
+  }
+
+  .project-hero {
+    height: 100%;
   }
   
   .body {
@@ -233,10 +241,13 @@ video {
 
   .project-intro {
     padding-bottom: 140px;
+    grid-row-gap: 20px;
   }
 
   .project-hero {
     margin-top: -68px;
+    /* magic number to match the navigation placeholder height */
+    /* better way to do this is just have a new nav on mobile render */
   }
 
   .project-hero--bottom {
@@ -254,7 +265,7 @@ video {
 
   .align-image-bottom {
     margin: 20px auto 0;
-    padding: 0;
+    padding: 0 40px;
   }
 
   .project-intro {
@@ -267,6 +278,16 @@ video {
   
   .project-image--half {
     padding: 90px 60px;
+  }
+
+  .first-detail {
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+  
+  .second-detail {
+    grid-column-start: 6;
+    grid-column-end: 12;
   }
 
   .image-2up {
@@ -307,7 +328,17 @@ video {
 
 @media screen and (min-width: 1200px) {
   .align-image-bottom {
-    max-width: none;
+    padding: 0;
+  }
+
+  .first-detail {
+    grid-column-start: 6;
+    grid-column-end: 8;
+  }
+  
+  .second-detail {
+    grid-column-start: 8;
+    grid-column-end: 12;
   }
 }
 
@@ -323,28 +354,6 @@ video {
   justify-content: flex-start;
   align-content: center;
   overflow: hidden;
-}
-
-.first-detail {
-  grid-column-start: 1;
-  grid-column-end: 12;
-}
-
-.second-detail {
-  grid-column-start: 1;
-  grid-column-end: 12;
-}
-
-@media screen and (min-width: 960px) {
-  .first-detail {
-    grid-column-start: 6;
-    grid-column-end: 8;
-  }
-  
-  .second-detail {
-    grid-column-start: 8;
-    grid-column-end: 12;
-  }
 }
 
 .icon-wrapper {
