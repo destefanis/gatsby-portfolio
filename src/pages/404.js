@@ -19,10 +19,6 @@ const NotFoundPage = () => {
     <main style={pageStyles}>
       <title>Not found</title>
       <h1 style={headingStyles}>404 Page not found</h1>
-      <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
-        <iframe src="https://giphy.com/embed/jpbnoe3UIa8TU8LM13" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen>
-        </iframe>
-      </div>
       <Link to="/">Visit the home page</Link>
     </main>
   )
