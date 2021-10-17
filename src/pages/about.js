@@ -33,6 +33,11 @@ const AboutPage = () => {
     setCursorVariant("contact");
   }
 
+  function photoEnter(event) {
+    setCursorText("❤️");
+    setCursorVariant("contact");
+  }
+
   function linkEnter(event) {
     setCursorText("");
     setCursorVariant("link");
@@ -57,14 +62,14 @@ const AboutPage = () => {
                 <video src="https://newportfolio.s3-us-west-2.amazonaws.com/wave.mp4" className={styles.video} autoPlay muted loop />
               </div>
               <div className={`${styles.smallVideo} ${styles.second}`}>
-                <video src="https://newportfolio.s3-us-west-2.amazonaws.com/franklin.mp4" className={styles.video} autoPlay muted loop />
+                <video src="https://newportfolio.s3-us-west-2.amazonaws.com/franklin.mp4" className={styles.video} autoPlay muted loop onMouseEnter={photoEnter} onMouseLeave={cursorLeave}/>
               </div>
             </motion.div>
             <motion.div className={`${styles.video} ${styles.third}`}>
-              <video src="https://newportfolio.s3-us-west-2.amazonaws.com/mondo.mp4" className={styles.video} autoPlay muted loop />
+              <video src="https://newportfolio.s3-us-west-2.amazonaws.com/mondo.mp4" className={styles.video} autoPlay muted loop  onMouseEnter={photoEnter} onMouseLeave={cursorLeave}/>
             </motion.div>
             <motion.div className={`${styles.video} ${styles.fourth}`}>
-              <video src="https://newportfolio.s3-us-west-2.amazonaws.com/irma.mp4" className={styles.video} autoPlay muted loop />
+              <video src="https://newportfolio.s3-us-west-2.amazonaws.com/irma.mp4" className={styles.video} autoPlay muted loop onMouseEnter={photoEnter} onMouseLeave={cursorLeave} />
             </motion.div>
           </div>
         </motion.section>
