@@ -185,7 +185,7 @@ function Navigation(props) {
                   <motion.li
                     variants={item}
                   >
-                    <Link to="/about" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+                    <Link to="/about" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} onClick={updateNav}>
                       <span>About Me</span>
                     </Link>
                   </motion.li>
@@ -195,35 +195,35 @@ function Navigation(props) {
                   <motion.li
                     variants={item}
                   >
-                    <Link to="/server-video" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+                    <Link to="/server-video" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} onClick={updateNav}>
                       <span>Server Video</span>
                     </Link>
                   </motion.li>
                   <motion.li
                     variants={item}
                   >
-                    <Link to="/discord-growth" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+                    <Link to="/discord-growth" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} onClick={updateNav}>
                       <span>Discord Growth</span>
                     </Link>
                   </motion.li>
                   <motion.li
                     variants={item}
                   >
-                    <Link to="/design-tooling" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+                    <Link to="/design-tooling" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} onClick={updateNav}>
                       <span>Design Tooling</span>
                     </Link>
                   </motion.li>
                   <motion.li
                     variants={item}
                   >
-                    <Link to="/destiny-medals" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+                    <Link to="/destiny-medals" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}  onClick={updateNav}>
                       <span>Destiny Medals</span>
                     </Link>
                   </motion.li>
                   <motion.li
                     variants={item}
                   >
-                    <Link to="/steelseries" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+                    <Link to="/steelseries" className={styles.link} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} onClick={updateNav}>
                       <span>SteelSeries</span>
                     </Link>
                   </motion.li>
