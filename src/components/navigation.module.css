@@ -73,7 +73,7 @@
   justify-content: center;
   flex-flow: row;
   padding: 12px;
-  background: var(--color-white);
+  /* background: var(--color-white); */
   border-radius: 32px;
   line-height: 24px;
   cursor: pointer;
@@ -121,8 +121,9 @@
   overflow: hidden;
   justify-content: center;
   align-content: flex-start;
-  background: var(--color-white);
-  opacity: 0.9;
+  background: var(--color-pink);
+  opacity: 1;
+  z-index: 15;
 }
 
 .half {
@@ -132,9 +133,10 @@
   margin-left: auto;
   width: 100%;
   height: 100%;
-  background: var(--color-pink);
+  background: var(--color-white);
   justify-content: center;
   align-content: flex-start;
+  z-index: 15;
 }
 
 .wrapper {
@@ -156,7 +158,7 @@
 .link {
   font-size: 32px;
   margin-bottom: 16px;
-  color: var(--color-pink-dark);
+  color: var(--color-black);
 }
 
 .socialIcons {

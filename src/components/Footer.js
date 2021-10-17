@@ -25,16 +25,14 @@ function Footer(props) {
         <div className={styles.card} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
           <h2 className={styles.title}>
             Question about my work?
-            {/* <img src="/message-circle.svg" alt="Message Icon" className={styles.icon} /> */}
           </h2>
           <h2 className={`${styles.title} ${styles.contact} `}>
-            <a href="mailto:someone@yoursite.com">Let's chat.</a>
-            {/* <img src="/message-circle.svg" alt="Message Icon" className={styles.icon} /> */}
+            <a href="https://www.linkedin.com/in/danielrd/">Let's chat.</a>
           </h2>
         </div>
         <nav className={styles.footerLinks}>
           <div className={styles.openSource}>
-            View this portfolio on <a href="https://www.figma.com/@daniel">Figma</a> or <a href="https://github.com/destefanis/gatsby-portfolio">Github</a>.
+            View this portfolio on <a href="https://www.figma.com/@daniel" onMouseEnter={linkEnter} onMouseLeave={linkLeave}>Figma</a> or <a href="https://github.com/destefanis/gatsby-portfolio" onMouseEnter={linkEnter} onMouseLeave={linkLeave}>Github</a>.
           </div>
           <div className={styles.socialLinks}>
             <a href="https://twitter.com/daniel__designs" target="_blank" onMouseEnter={linkEnter} onMouseLeave={linkLeave} className={styles.socialLink}>

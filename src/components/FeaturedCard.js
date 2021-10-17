@@ -64,9 +64,10 @@ function FeaturedCard(props) {
     }
   }, [hover, xy, centerPoint]);
 
+  // fix this link
   return (
+    <Link to={props.link} className={`${styles.featured}`}>
     <div className={`${styles.cardPerspectiveWrapper} ${styles.featured}`}>
-      <Link to="/server-video">
       <motion.div 
         className={`${styles.contentWrapper}`}
         style={{
@@ -95,8 +96,8 @@ function FeaturedCard(props) {
           <h6 className={styles.title}>{props.title}</h6>
         </div>
       </motion.div>
-      </Link>
     </div>
+    </Link>
   )
 }
 

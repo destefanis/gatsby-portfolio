@@ -66,7 +66,7 @@ function Cursor(props) {
       color: "#000",
       height: 80,
       width: 80,
-      zIndex: 1,
+      zIndex: 10,
       fontSize: "32px",
       x: mouseXPosition - 40,
       y: mouseYPosition - 40,

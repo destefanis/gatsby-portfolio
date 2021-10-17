@@ -31,6 +31,10 @@
   /* cursor: none; */
 }
 
+.card:hover .image {
+  transform: scale(1);
+}
+
 .featuredContent {
   display: flex;
   align-content: center;
@@ -57,6 +61,17 @@
 }
 
 @media screen and (min-width: 960px) {
+  .card {
+    height: 560px; 
+  }
+
+  /* Featured cards take up an entire row */
+  .featured {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .card {
     height: 660px; 
   }
@@ -130,7 +145,8 @@
 .image {
   width: 100%;
   height: auto;
-  transform: translateZ(0);
+  transform: translateZ(0) scale(1.015);
+  transition: transform 200ms ease;
 }
 
 .title {
