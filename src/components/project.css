@@ -57,7 +57,8 @@
 .project-hero-image {
   position: relative;
   z-index: 5;
-  margin: -30px auto 0;
+  /* margin: -30px auto 0; */
+  margin: auto;
   pointer-events: none;
 }
 
@@ -234,12 +235,21 @@ video {
     padding-bottom: 140px;
   }
 
+  .project-hero {
+    margin-top: -68px;
+  }
+
+  .project-hero--bottom {
+    margin-top: 0;
+  }
+
   .project-hero-wrapper {
     height: 760px;
   }
 
   .project-hero-image {
-    margin: -80px auto 0;
+    /* margin: -80px auto 0; */
+    margin: auto;
   }
 
   .align-image-bottom {
