@@ -4,27 +4,26 @@ module.exports = {
     pathPrefix: "/gatsby-portfolio",
   },
   plugins: [
-    "gatsby-plugin-react-helmet", 
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaults: {
-          formats: [`auto`, `webp`],
-          placeholder: `dominantColor`,
-          quality: 90,
-          breakpoints: [960, 1200, 1400, 1600],
-          backgroundColor: `transparent`,
-          tracedSVGOptions: {},
-          blurredOptions: {},
-          jpgOptions: {},
-          pngOptions: {},
-          webpOptions: {},
-          avifOptions: {},
-        },
-        defaultQuality: 100,
-      },
-    },
+    "gatsby-plugin-react-helmet",
     "gatsby-transformer-sharp",
-    `gatsby-plugin-image`,
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: 'gatsby-plugin-favicons',
+      options: {
+        logo: './src/images/icon.png',
+        appName: 'Daniel D',
+        background: '#fff',
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          yandex: false,
+          windows: false
+        }
+      }
+    }
   ],
 };

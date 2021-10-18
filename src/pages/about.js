@@ -48,7 +48,7 @@ const AboutPage = () => {
       <div>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>About Me</title>
+          <title>Daniel Destefanis Design - About Me</title>
           <link rel="canonical" href="https://danield.design/about/" />
         </Helmet>
         <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />

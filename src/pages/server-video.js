@@ -75,7 +75,7 @@ const ServerVideo = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Server Video Case Study</title>
+        <title>Daniel Destefanis Design - Server Video Case Study</title>
         <link rel="canonical" href="https://danield.design/server-video/" />
       </Helmet>
       <div>
@@ -152,7 +152,6 @@ const ServerVideo = () => {
           <section className="project-main">
             <figure className="project-image project-image--full">
               <img alt="Server video design on mobile and desktop devices" src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/1-server-video-desktop-and-mobile.png" />
-              {/* Using Static Image had a 1 point increase in performance but introduced more issues, future todo */}
               {/* <StaticImage 
                 alt="Server video design on mobile and desktop devices"
                 src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-final/1-server-video-desktop-and-mobile.png"

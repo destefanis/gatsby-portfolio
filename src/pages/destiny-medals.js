@@ -75,7 +75,7 @@ const DestinyMedals = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Destiny Medals Case Study</title>
+        <title>Daniel Destefanis Design - Destiny Medals Case Study</title>
         <link rel="canonical" href="https://danield.design/destiny-medals/" />
       </Helmet>
       <div>

@@ -75,7 +75,7 @@ const DesignTooling = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Design Tooling Case Study</title>
+        <title>Daniel Destefanis Designs - Design Tooling Case Study</title>
         <link rel="canonical" href="https://danield.design/design-tooling/" />
       </Helmet>
       <div>

@@ -66,7 +66,7 @@ const IndexPage = () => {
     <main>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Daniel Destefanis Home</title>
+        <title>Daniel Destefanis Design - Home</title>
         <link rel="canonical" href="https://danield.design/" />
       </Helmet>
       <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>
