@@ -70,6 +70,7 @@ body {
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 20px;
+  transform: scale(1);
 }
 
 .container {
