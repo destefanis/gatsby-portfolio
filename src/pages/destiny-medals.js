@@ -75,7 +75,8 @@ const DestinyMedals = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Daniel Destefanis Design - Destiny Medals Case Study</title>
+        <title>Daniel Destefanis Product Designer - Destiny Medals Case Study</title>
+        <meta name="description" content="Case study for a webapp I made for Destiny, the game by Bungie." />
         <link rel="canonical" href="https://danield.design/destiny-medals/" />
       </Helmet>
       <div>

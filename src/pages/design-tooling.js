@@ -75,7 +75,8 @@ const DesignTooling = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Daniel Destefanis Designs - Design Tooling Case Study</title>
+        <title>Daniel Destefanis Product Designer - Design Tooling Case Study</title>
+        <meta name="description" content="Case study for design tools I've made in Figma for Discord and the design community." />
         <link rel="canonical" href="https://danield.design/design-tooling/" />
       </Helmet>
       <div>

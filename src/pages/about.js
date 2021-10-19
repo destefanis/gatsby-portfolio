@@ -48,7 +48,8 @@ const AboutPage = () => {
       <div>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Daniel Destefanis Design - About Me</title>
+          <title>Daniel Destefanis Product Design - About Me</title>
+          <meta name="description" content="Daniel Destefanis is a product design manager from Chicago, working at Discord." />
           <link rel="canonical" href="https://danield.design/about/" />
         </Helmet>
         <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave} />

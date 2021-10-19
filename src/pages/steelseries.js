@@ -74,7 +74,8 @@ const Steelseries = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Daniel Destefanis Design - SteelSeries Case Study</title>
+        <title>Daniel Destefanis Product Designer - SteelSeries Case Study</title>
+        <meta name="description" content="Case study for a design exploration I did for the company SteelSeries and their software SteelSeries Engine" />
         <link rel="canonical" href="https://danield.design/steelseries/" />
       </Helmet>
       <div>

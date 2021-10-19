@@ -75,7 +75,8 @@ const ServerVideo = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Daniel Destefanis Design - Server Video Case Study</title>
+        <title>Daniel Destefanis Product Designer - Server Video Case Study</title>
+        <meta name="description" content="Case study for Discord Server Video feature." />
         <link rel="canonical" href="https://danield.design/server-video/" />
       </Helmet>
       <div>
