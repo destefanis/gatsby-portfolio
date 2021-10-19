@@ -67,7 +67,7 @@ const IndexPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Daniel Destefanis Product Designer - Home</title>
-        <meta name="description" content="The work of Daniel Destefanis, a product design manager from Chicag currently working at Discord." />
+        <meta name="description" content="The work of Daniel Destefanis, a product design manager from Chicago currently working at Discord." />
         <link rel="canonical" href="https://danield.design/" />
       </Helmet>
       <Navigation onLinkEnter={linkEnter} onLinkLeave={cursorLeave}/>

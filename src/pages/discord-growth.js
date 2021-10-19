@@ -76,6 +76,7 @@ const DiscordGrowth = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Daniel Destefanis Design - Discord Growth Case Study</title>
+        <meta name="description" content="Case study for multiple experiments we ran on Discord's Growth Team" />
         <link rel="canonical" href="https://danield.design/discord-growth/" />
       </Helmet>
       <div>
