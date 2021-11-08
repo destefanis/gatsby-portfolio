@@ -2,12 +2,11 @@
   Personal Product Design Portfolio
 </h1>
 
-[View my portfolio](https://www.figma.com/community/file/1039349863511621085/Product-Design-Portfolio)
+### [View my portfolio](https://www.figma.com/community/file/1039349863511621085/Product-Design-Portfolio)
 
 ## View the design
-This portfolio is open-source. The design for this site is also available on Figma.
-[View Figma Design](https://www.figma.com/community/file/1039349863511621085)
-
+This portfolio is open-source and so is the design on Figma.
+[View the design on Figma Community](https://www.figma.com/community/file/1039349863511621085)
 
 ## How to use
 
@@ -17,7 +16,7 @@ This portfolio is open-source. The design for this site is also available on Fig
 
 2.  **Clone this repo**
 
-    Once you have Gatsby installed, navigate back to this folder in your command line and run:
+    Once you have Gatsby installed, clone this repo locally, then navigate back to this folder in your command line and run:
 
     ```shell
     npm run develop
@@ -25,6 +24,10 @@ This portfolio is open-source. The design for this site is also available on Fig
 
 3.  **Open the code and start customizing!**
 
-    The site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time! This code is far from perfect but feel free to remix and use for your own portfolio.
+    * The site is now running at http://localhost:8000!
+    * Edit `src/pages/index.js` to see your site update in real-time! 
+    * This code is far from perfect but feel free to remix and use for your own portfolio. Hopefully it's a valuable learning tool.
+    * All the project pages can be found in the pages folder.
+    * The entire page transition lives in the `Transition.js` component.
+    * I had to build a `ClientOnly.js` component to solve for some strange server side rendering bugs  (data hydration) when it cames to animations.
+    * This site uses Gatsby + Framer Motion and Netlify for Hosting.
