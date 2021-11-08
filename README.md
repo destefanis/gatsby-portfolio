@@ -12,7 +12,7 @@ This portfolio is open-source and so is the design on Figma.
 
 1.  **Install Gatsby**
 
-    Visit the official [Gatsby documentation](https://www.gatsbyjs.com/docs/quick-start/) for installation instructions.
+    Visit the official [Gatsby documentation](https://www.gatsbyjs.com/docs/quick-start/) for installation instructions. Note: This site uses Gatsby 2.22 (not 3 or 4) so you may need to install a specific version.
 
 2.  **Clone this repo**
 
