@@ -596,7 +596,7 @@ const ServerVideo = () => {
             <Card
               image="https://newportfolio.s3-us-west-2.amazonaws.com/design-tooling-image.png"
               imageAlt="UI of Design Tooling Plugins in Figma"
-              link="/destiny-tooling"
+              link="/design-tooling"
               color="green"
               title="Design Tooling"
               size="normal"
