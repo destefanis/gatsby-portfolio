@@ -245,10 +245,10 @@ const DesignTooling = () => {
               />
             </figure>
             <figure className="project-image project-image--full">
-              <video src="https://designlint.s3-us-west-2.amazonaws.com/design-lint-website-vid+(1).mp4" muted loop />
+              <video src="https://designlint.s3-us-west-2.amazonaws.com/design-lint-website-vid+(1).mp4" autoPlay muted loop />
             </figure>
             <figure className="project-image project-image--full">
-              <video src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/design-lint-update.mp4" muted loop />
+              <video src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/design-lint-update.mp4" autoPlay muted loop />
             </figure>
 
             <div className="body">
@@ -268,7 +268,7 @@ const DesignTooling = () => {
             </figure>
 
             <figure className="project-image project-image--full">
-              <video src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/auto-theme-example.mp4" muted loop />
+              <video src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/auto-theme-example.mp4" autoPlay muted loop />
             </figure>
 
             <div className="body">
@@ -280,7 +280,7 @@ const DesignTooling = () => {
             </div>
 
             <figure className="project-image project-image--full">
-              <video src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/create-sticky-example-smaller.mp4" muted loop />
+              <video src="https://newportfolio.s3.us-west-2.amazonaws.com/design-tooling/create-sticky-example-smaller.mp4" autoPlay muted loop />
             </figure>
 
             <div className="body">
