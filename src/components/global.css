@@ -15,6 +15,10 @@
   --color-teal: hsla(180, 47%, 31%, 1);
 }
 
+figure {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
