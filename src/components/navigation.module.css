@@ -29,6 +29,10 @@
   background: var(--color-white);
 }
 
+.logo {
+  align-self: center;
+}
+
 @media screen and (min-width: 960px) {
 
   .nav {
@@ -49,7 +53,7 @@
 .navList {
   display: flex;
   flex-flow: row;
-  align-self: flex-end;
+  align-self: center;
   margin-left: auto;
 }
 
@@ -79,11 +83,9 @@
 
 .menu {
   display: flex;
-  margin-top: -16px;
   align-content: center;
   justify-content: center;
   flex-flow: row;
-  padding: 12px;
   border-radius: 32px;
   line-height: 24px;
   cursor: pointer;
